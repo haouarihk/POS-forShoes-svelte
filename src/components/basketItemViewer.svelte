@@ -30,7 +30,7 @@
   $: {
     totalCost = prices.reduce((a, b) => a + b, 0);
   }
-
+ 
   function distneast(){
 
   }
