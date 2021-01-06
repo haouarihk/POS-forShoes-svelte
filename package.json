@@ -6,7 +6,7 @@
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
-    "app": "electron ./app/dist/main.js",
+    "app": "electron ./App/dist/main.js",
     "apw": "cd app && tsc --watch"
   },
   "devDependencies": {
