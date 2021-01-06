@@ -1,0 +1,29 @@
+#todo
+
+
+
+[] -we need to be able to control the databse on whatever we want
+
+[X] -we need to put each item on its own in the storage variable along with its size and its color
+
+[X] -we need to be able to add more storage items in the databse.
+
+[] -we need to stylize owr front end.
+
+[] -we need barcode maker
+
+[] -we need statistics page for how much we earned bassed on sellings.
+
+[] -we need to be able to return items when the client returns them.
+
+[] -we need to be able to manager exisitng lister items.
+
+
+[X] -change select item to storage hander 
+
+[X] -change the structure of the database.
+
+
+
+
+
