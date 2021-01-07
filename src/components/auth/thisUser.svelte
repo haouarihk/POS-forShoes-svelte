@@ -1,6 +1,5 @@
 <script lang="ts">
     import firebase from "firebase";
-    import Fb from "firebase/app";
     import "firebase/firestore";
     import "firebase/auth";
     import "firebase/storage";
@@ -27,13 +26,25 @@
     }
 </script>
 
-{#await syco()}awaiting{:then _}
-{userData.displayName}
+<style>
+    .nav-item{
+        border: 0;
+    }
+</style>
+
+
+<p class="my-auto mx-1">
+{#await syco()}
+
+    awaiting
+{:then _}
+    {userData.displayName}
 {:catch}
-you don't have perms
+    you don't have perms
 {/await}
 |
+</p>
 <button
-    class="btn btn-outline-success my-2 my-sm-0"
+    class="nav-item mx-1 my-auto my-sm-0"
     on:click={() => auth.signOut()}>LogOut
 </button>

@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
 var app = (function () {
     'use strict';
 
@@ -87,9 +87,6 @@ var app = (function () {
             const slot_context = get_slot_context(slot_definition, ctx, $$scope, get_slot_context_fn);
             slot.p(slot_context, slot_changes);
         }
-    }
-    function null_to_empty(value) {
-        return value == null ? '' : value;
     }
     function action_destroyer(action_result) {
         return action_result && is_function(action_result.destroy) ? action_result.destroy : noop;
@@ -52730,7 +52727,7 @@ var app = (function () {
     			input = element("input");
     			attr_dev(input, "type", "text");
     			attr_dev(input, "class", "btn btn-secondary col-12");
-    			add_location(input, file, 79, 4, 1766);
+    			add_location(input, file, 79, 4, 1823);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
@@ -52784,10 +52781,10 @@ var app = (function () {
     			t0 = text(/*title*/ ctx[0]);
     			span = element("span");
     			span.textContent = "↵";
-    			add_location(span, file, 76, 13, 1720);
+    			add_location(span, file, 76, 13, 1777);
     			attr_dev(button, "type", "button");
     			attr_dev(button, "class", "btn btn-secondary  col-12");
-    			add_location(button, file, 72, 4, 1594);
+    			add_location(button, file, 72, 4, 1651);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -52854,8 +52851,8 @@ var app = (function () {
     			if (if_block0) if_block0.c();
     			t1 = space();
     			if (if_block1) if_block1.c();
-    			attr_dev(div, "class", "ddm2 dropdown-content svelte-10vhoq1");
-    			add_location(div, file, 91, 4, 2065);
+    			attr_dev(div, "class", "ddm2 dropdown-content svelte-1rl7fwh");
+    			add_location(div, file, 91, 4, 2122);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -52995,7 +52992,7 @@ var app = (function () {
     			: "");
 
     			attr_dev(button, "type", "button");
-    			add_location(button, file, 93, 8, 2182);
+    			add_location(button, file, 93, 8, 2239);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -53069,7 +53066,7 @@ var app = (function () {
     			button.textContent = "New (+)";
     			attr_dev(button, "class", button_class_value = "darkTheme  dropdown-item s");
     			attr_dev(button, "type", "button");
-    			add_location(button, file, 105, 8, 2561);
+    			add_location(button, file, 105, 8, 2618);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -53111,7 +53108,7 @@ var app = (function () {
     			button.textContent = "Cancel (X)";
     			attr_dev(button, "class", button_class_value = "darkTheme bg-danger  dropdown-item ");
     			attr_dev(button, "type", "button");
-    			add_location(button, file, 114, 8, 2821);
+    			add_location(button, file, 114, 8, 2878);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -53161,9 +53158,9 @@ var app = (function () {
     			if_block0.c();
     			t = space();
     			if (if_block1) if_block1.c();
-    			attr_dev(div, "class", div_class_value = "brr " + /*Class*/ ctx[1] + " svelte-10vhoq1");
+    			attr_dev(div, "class", div_class_value = "brr " + /*Class*/ ctx[1] + " svelte-1rl7fwh");
     			attr_dev(div, "style", /*Style*/ ctx[2]);
-    			add_location(div, file, 70, 0, 1531);
+    			add_location(div, file, 70, 0, 1588);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -53211,7 +53208,7 @@ var app = (function () {
     				check_outros();
     			}
 
-    			if (!current || dirty & /*Class*/ 2 && div_class_value !== (div_class_value = "brr " + /*Class*/ ctx[1] + " svelte-10vhoq1")) {
+    			if (!current || dirty & /*Class*/ 2 && div_class_value !== (div_class_value = "brr " + /*Class*/ ctx[1] + " svelte-1rl7fwh")) {
     				attr_dev(div, "class", div_class_value);
     			}
 
@@ -53536,6 +53533,31 @@ var app = (function () {
     	}
     }
 
+    /*! *****************************************************************************
+    Copyright (c) Microsoft Corporation.
+
+    Permission to use, copy, modify, and/or distribute this software for any
+    purpose with or without fee is hereby granted.
+
+    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+    REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+    AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+    INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+    LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+    OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+    PERFORMANCE OF THIS SOFTWARE.
+    ***************************************************************************** */
+
+    function __awaiter$9(thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+        return new (P || (P = Promise))(function (resolve, reject) {
+            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+            function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+            step((generator = generator.apply(thisArg, _arguments || [])).next());
+        });
+    }
+
     /** tunrs an object to array
      *
      * @param obje -is the obejct that you wanna
@@ -53545,7 +53567,7 @@ var app = (function () {
         let indexes = Object.keys(obj);
         let _array = [];
         indexes.forEach(i => {
-            _array.push({ ...obj[i], ...{ id: i } });
+            _array.push(Object.assign(Object.assign({}, obj[i]), { id: i }));
         });
         return _array;
     };
@@ -53577,19 +53599,21 @@ var app = (function () {
         return _objs;
     };
     /** get interdata out of the realtime database */
-    async function getInterData(db, interdatatype) {
-        return new Promise((solve, reject) => {
-            if (interdatatype) {
-                //@ts-ignore
-                db.ref(`interdata/${interdatatype}`)
-                    .once("value", (snap) => {
-                    let val = snap.val();
-                    solve(toArray(val) || []);
-                });
-            }
-            else {
-                solve([]);
-            }
+    function getInterData(db, interdatatype) {
+        return __awaiter$9(this, void 0, void 0, function* () {
+            return new Promise((solve, reject) => {
+                if (interdatatype) {
+                    //@ts-ignore
+                    db.ref(`interdata/${interdatatype}`)
+                        .once("value", (snap) => {
+                        let val = snap.val();
+                        solve(toArray(val) || []);
+                    });
+                }
+                else {
+                    solve([]);
+                }
+            });
         });
     }
     /** replaces every param of special_replacer_obj with its value  on text*/
@@ -53612,12 +53636,14 @@ var app = (function () {
         });
     }
     /** gets multiple items by id */
-    async function getMultiItemsById(db, ids) {
-        let _items = {};
-        for (let i = 0; i < ids.length; i++) {
-            _items[ids[i]] = await getItemById(db, ids[i]);
-        }
-        return _items;
+    function getMultiItemsById(db, ids) {
+        return __awaiter$9(this, void 0, void 0, function* () {
+            let _items = {};
+            for (let i = 0; i < ids.length; i++) {
+                _items[ids[i]] = yield getItemById(db, ids[i]);
+            }
+            return _items;
+        });
     }
     /* download image out of firebase storage */
     function getImg(fStorage, photoRef) {
@@ -54811,7 +54837,7 @@ var app = (function () {
     /* src\components\creation\storage\storageHandler.svelte generated by Svelte v3.31.0 */
     const file$2 = "src\\components\\creation\\storage\\storageHandler.svelte";
 
-    // (54:4) {#if possibleItems.length > 0}
+    // (58:4) {#if possibleItems.length > 0}
     function create_if_block$5(ctx) {
     	let h5;
     	let t0;
@@ -54827,7 +54853,7 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = text("):");
     			attr_dev(h5, "class", h5_class_value = "" + ((/*wid*/ ctx[5] < 200 ? "col-12" : "col-6") + " "));
-    			add_location(h5, file$2, 54, 8, 1145);
+    			add_location(h5, file$2, 58, 8, 1113);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -54851,7 +54877,7 @@ var app = (function () {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(54:4) {#if possibleItems.length > 0}",
+    		source: "(58:4) {#if possibleItems.length > 0}",
     		ctx
     	});
 
@@ -54922,7 +54948,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "row");
     			add_render_callback(() => /*div_elementresize_handler*/ ctx[16].call(div));
-    			add_location(div, file$2, 44, 0, 884);
+    			add_location(div, file$2, 48, 0, 852);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -55487,7 +55513,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (75:4) {#if onFocus}
+    // (82:4) {#if onFocus}
     function create_if_block$6(ctx) {
     	let div;
     	let each_value = /*viewdPosi*/ ctx[1];
@@ -55506,8 +55532,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(div, "class", "autocomplete-items oldautocomplete svelte-gxdddm");
-    			add_location(div, file$4, 75, 8, 2079);
+    			attr_dev(div, "class", "autocomplete-items oldautocomplete svelte-1brjz46");
+    			add_location(div, file$4, 82, 8, 1840);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -55551,14 +55577,14 @@ var app = (function () {
     		block,
     		id: create_if_block$6.name,
     		type: "if",
-    		source: "(75:4) {#if onFocus}",
+    		source: "(82:4) {#if onFocus}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (77:12) {#each viewdPosi as pos}
+    // (84:12) {#each viewdPosi as pos}
     function create_each_block$1(ctx) {
     	let div;
     	let t_value = /*pos*/ ctx[8] + "";
@@ -55574,8 +55600,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text(t_value);
-    			attr_dev(div, "class", "svelte-gxdddm");
-    			add_location(div, file$4, 77, 16, 2183);
+    			attr_dev(div, "class", "svelte-1brjz46");
+    			add_location(div, file$4, 84, 16, 1944);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -55601,7 +55627,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(77:12) {#each viewdPosi as pos}",
+    		source: "(84:12) {#each viewdPosi as pos}",
     		ctx
     	});
 
@@ -55625,11 +55651,11 @@ var app = (function () {
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "helper");
     			attr_dev(input, "placeholder", "helper");
-    			attr_dev(input, "class", "svelte-gxdddm");
-    			add_location(input, file$4, 67, 4, 1838);
-    			attr_dev(div, "class", "autocomplete svelte-gxdddm");
+    			attr_dev(input, "class", "svelte-1brjz46");
+    			add_location(input, file$4, 74, 4, 1599);
+    			attr_dev(div, "class", "autocomplete svelte-1brjz46");
     			set_style(div, "width", "300px");
-    			add_location(div, file$4, 66, 0, 1785);
+    			add_location(div, file$4, 73, 0, 1546);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -55798,7 +55824,7 @@ var app = (function () {
     /* node_modules\sv-bootstrap-modal\src\Modal.svelte generated by Svelte v3.31.0 */
     const file$5 = "node_modules\\sv-bootstrap-modal\\src\\Modal.svelte";
 
-    // (72:0) {#if open}
+    // (71:0) {#if open}
     function create_if_block$7(ctx) {
     	let div2;
     	let div1;
@@ -55826,17 +55852,17 @@ var app = (function () {
     			if (if_block) if_block.c();
     			if_block_anchor = empty();
     			attr_dev(div0, "class", "modal-content");
-    			add_location(div0, file$5, 88, 6, 2103);
-    			attr_dev(div1, "class", div1_class_value = "modal-dialog " + /*dialogClasses*/ ctx[1] + " svelte-1m2bluk");
+    			add_location(div0, file$5, 87, 6, 2172);
+    			attr_dev(div1, "class", div1_class_value = "modal-dialog " + /*dialogClasses*/ ctx[1] + " svelte-rc5bc8");
     			attr_dev(div1, "role", "document");
-    			add_location(div1, file$5, 83, 4, 1925);
-    			attr_dev(div2, "class", "modal show svelte-1m2bluk");
+    			add_location(div1, file$5, 82, 4, 1994);
+    			attr_dev(div2, "class", "modal show svelte-rc5bc8");
     			attr_dev(div2, "tabindex", "-1");
     			attr_dev(div2, "role", "dialog");
     			attr_dev(div2, "aria-labelledby", /*labelledby*/ ctx[3]);
     			attr_dev(div2, "aria-describedby", /*describedby*/ ctx[2]);
     			attr_dev(div2, "aria-modal", "true");
-    			add_location(div2, file$5, 72, 2, 1647);
+    			add_location(div2, file$5, 71, 2, 1716);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -55871,7 +55897,7 @@ var app = (function () {
     				}
     			}
 
-    			if (!current || dirty & /*dialogClasses*/ 2 && div1_class_value !== (div1_class_value = "modal-dialog " + /*dialogClasses*/ ctx[1] + " svelte-1m2bluk")) {
+    			if (!current || dirty & /*dialogClasses*/ 2 && div1_class_value !== (div1_class_value = "modal-dialog " + /*dialogClasses*/ ctx[1] + " svelte-rc5bc8")) {
     				attr_dev(div1, "class", div1_class_value);
     			}
 
@@ -55948,14 +55974,14 @@ var app = (function () {
     		block,
     		id: create_if_block$7.name,
     		type: "if",
-    		source: "(72:0) {#if open}",
+    		source: "(71:0) {#if open}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (94:2) {#if open}
+    // (93:2) {#if open}
     function create_if_block_1$3(ctx) {
     	let div;
     	let div_transition;
@@ -55965,7 +55991,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "modal-backdrop show");
-    			add_location(div, file$5, 94, 4, 2198);
+    			add_location(div, file$5, 93, 4, 2267);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -55996,7 +56022,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$3.name,
     		type: "if",
-    		source: "(94:2) {#if open}",
+    		source: "(93:2) {#if open}",
     		ctx
     	});
 
@@ -56480,8 +56506,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			div.textContent = "Loading ..";
-    			attr_dev(div, "class", "poper svelte-jfp0mt");
-    			add_location(div, file$6, 144, 8, 4594);
+    			attr_dev(div, "class", "poper svelte-rkgm8u");
+    			add_location(div, file$6, 144, 8, 4624);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -56559,26 +56585,26 @@ var app = (function () {
     			button2 = element("button");
     			t9 = text(t9_value);
     			attr_dev(h5, "class", "modal-title");
-    			add_location(h5, file$6, 115, 16, 3542);
+    			add_location(h5, file$6, 115, 16, 3572);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$6, 123, 20, 3843);
+    			add_location(span, file$6, 123, 20, 3873);
     			attr_dev(button0, "type", "button");
-    			attr_dev(button0, "class", "close svelte-jfp0mt");
-    			add_location(button0, file$6, 119, 16, 3688);
+    			attr_dev(button0, "class", "close svelte-rkgm8u");
+    			add_location(button0, file$6, 119, 16, 3718);
     			attr_dev(div0, "class", "modal-header");
-    			add_location(div0, file$6, 114, 12, 3498);
+    			add_location(div0, file$6, 114, 12, 3528);
     			attr_dev(div1, "class", "modal-body");
-    			add_location(div1, file$6, 126, 12, 3943);
+    			add_location(div1, file$6, 126, 12, 3973);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-secondary");
-    			add_location(button1, file$6, 130, 16, 4086);
+    			add_location(button1, file$6, 130, 16, 4116);
     			attr_dev(button2, "type", "button");
     			attr_dev(button2, "class", "btn btn-primary");
-    			add_location(button2, file$6, 134, 16, 4263);
+    			add_location(button2, file$6, 134, 16, 4293);
     			attr_dev(div2, "class", "modal-footer");
-    			add_location(div2, file$6, 129, 12, 4042);
-    			attr_dev(div3, "class", "poper svelte-jfp0mt");
-    			add_location(div3, file$6, 113, 8, 3465);
+    			add_location(div2, file$6, 129, 12, 4072);
+    			attr_dev(div3, "class", "poper svelte-rkgm8u");
+    			add_location(div3, file$6, 113, 8, 3495);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -56772,8 +56798,8 @@ var app = (function () {
     			info.block.c();
     			t = space();
     			create_component(modal.$$.fragment);
-    			attr_dev(dir_1, "class", dir_1_class_value = " " + /*Class*/ ctx[4] + " svelte-jfp0mt");
-    			add_location(dir_1, file$6, 98, 0, 3136);
+    			attr_dev(dir_1, "class", dir_1_class_value = " " + /*Class*/ ctx[4] + " svelte-rkgm8u");
+    			add_location(dir_1, file$6, 98, 0, 3166);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -56796,7 +56822,7 @@ var app = (function () {
     				info.block.p(child_ctx, dirty);
     			}
 
-    			if (!current || dirty & /*Class*/ 16 && dir_1_class_value !== (dir_1_class_value = " " + /*Class*/ ctx[4] + " svelte-jfp0mt")) {
+    			if (!current || dirty & /*Class*/ 16 && dir_1_class_value !== (dir_1_class_value = " " + /*Class*/ ctx[4] + " svelte-rkgm8u")) {
     				attr_dev(dir_1, "class", dir_1_class_value);
     			}
 
@@ -57539,7 +57565,7 @@ var app = (function () {
     const get_header_slot_changes = dirty => ({});
     const get_header_slot_context = ctx => ({});
 
-    // (57:0) {#if isOpen}
+    // (61:0) {#if isOpen}
     function create_if_block$9(ctx) {
     	let div3;
     	let div0;
@@ -57580,16 +57606,16 @@ var app = (function () {
     			hr1 = element("hr");
     			t4 = space();
     			if (footer_slot_or_fallback) footer_slot_or_fallback.c();
-    			attr_dev(div0, "class", "backdrop svelte-1h0ystt");
-    			add_location(div0, file$8, 58, 8, 1192);
-    			add_location(hr0, file$8, 67, 12, 1489);
-    			attr_dev(div1, "class", "content p-1 svelte-1h0ystt");
-    			add_location(div1, file$8, 68, 12, 1508);
-    			add_location(hr1, file$8, 71, 12, 1608);
-    			attr_dev(div2, "class", "modal-content p-4 svelte-1h0ystt");
-    			add_location(div2, file$8, 60, 8, 1245);
-    			attr_dev(div3, "class", "modal svelte-1h0ystt");
-    			add_location(div3, file$8, 57, 4, 1163);
+    			attr_dev(div0, "class", "backdrop svelte-1l71wwr");
+    			add_location(div0, file$8, 62, 8, 990);
+    			add_location(hr0, file$8, 71, 12, 1287);
+    			attr_dev(div1, "class", "content p-1 svelte-1l71wwr");
+    			add_location(div1, file$8, 72, 12, 1306);
+    			add_location(hr1, file$8, 75, 12, 1406);
+    			attr_dev(div2, "class", "modal-content p-4 svelte-1l71wwr");
+    			add_location(div2, file$8, 64, 8, 1043);
+    			attr_dev(div3, "class", "modal svelte-1l71wwr");
+    			add_location(div3, file$8, 61, 4, 961);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -57671,14 +57697,14 @@ var app = (function () {
     		block,
     		id: create_if_block$9.name,
     		type: "if",
-    		source: "(57:0) {#if isOpen}",
+    		source: "(61:0) {#if isOpen}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (62:32)                   
+    // (66:32)                   
     function fallback_block_1(ctx) {
     	let div;
     	let h1;
@@ -57688,8 +57714,8 @@ var app = (function () {
     			div = element("div");
     			h1 = element("h1");
     			h1.textContent = "Your Modal Heading Goes Here...";
-    			add_location(h1, file$8, 64, 20, 1390);
-    			add_location(div, file$8, 63, 16, 1363);
+    			add_location(h1, file$8, 68, 20, 1188);
+    			add_location(div, file$8, 67, 16, 1161);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -57704,14 +57730,14 @@ var app = (function () {
     		block,
     		id: fallback_block_1.name,
     		type: "fallback",
-    		source: "(62:32)                   ",
+    		source: "(66:32)                   ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (74:40)                   
+    // (78:40)                   
     function fallback_block(ctx) {
     	let div;
     	let h1;
@@ -57728,9 +57754,9 @@ var app = (function () {
     			t1 = space();
     			button = element("button");
     			button.textContent = "close";
-    			add_location(h1, file$8, 76, 20, 1737);
-    			add_location(button, file$8, 77, 20, 1798);
-    			add_location(div, file$8, 75, 16, 1710);
+    			add_location(h1, file$8, 80, 20, 1535);
+    			add_location(button, file$8, 81, 20, 1596);
+    			add_location(div, file$8, 79, 16, 1508);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -57755,7 +57781,7 @@ var app = (function () {
     		block,
     		id: fallback_block.name,
     		type: "fallback",
-    		source: "(74:40)                   ",
+    		source: "(78:40)                   ",
     		ctx
     	});
 
@@ -57902,8 +57928,8 @@ var app = (function () {
     		c: function create() {
     			button = element("button");
     			button.textContent = "add new";
-    			attr_dev(button, "class", "f1 svelte-1e6xwaj");
-    			add_location(button, file$9, 100, 8, 3223);
+    			attr_dev(button, "class", "f1 svelte-1p540nx");
+    			add_location(button, file$9, 100, 8, 3267);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -57952,15 +57978,15 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "×";
     			attr_dev(h5, "class", "modal-title");
-    			add_location(h5, file$9, 106, 8, 3377);
+    			add_location(h5, file$9, 106, 8, 3421);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$9, 108, 12, 3506);
+    			add_location(span, file$9, 108, 12, 3550);
     			attr_dev(button, "type", "button");
     			attr_dev(button, "class", "close");
-    			add_location(button, file$9, 107, 8, 3424);
+    			add_location(button, file$9, 107, 8, 3468);
     			attr_dev(div, "slot", "header");
-    			attr_dev(div, "class", " f1 svelte-1e6xwaj");
-    			add_location(div, file$9, 105, 4, 3336);
+    			attr_dev(div, "class", " f1 svelte-1p540nx");
+    			add_location(div, file$9, 105, 4, 3380);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -58025,10 +58051,10 @@ var app = (function () {
     			input = element("input");
     			attr_dev(input, "type", "number");
     			attr_dev(input, "min", "0");
-    			add_location(input, file$9, 113, 8, 3660);
+    			add_location(input, file$9, 113, 8, 3704);
     			attr_dev(div, "slot", "content");
-    			attr_dev(div, "class", " f2 svelte-1e6xwaj");
-    			add_location(div, file$9, 111, 4, 3582);
+    			attr_dev(div, "class", " f2 svelte-1p540nx");
+    			add_location(div, file$9, 111, 4, 3626);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -58105,13 +58131,13 @@ var app = (function () {
     			button1.textContent = "Add";
     			attr_dev(button0, "type", "button");
     			attr_dev(button0, "class", "btn btn-secondary");
-    			add_location(button0, file$9, 116, 8, 3780);
+    			add_location(button0, file$9, 116, 8, 3824);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-primary");
-    			add_location(button1, file$9, 120, 8, 3923);
+    			add_location(button1, file$9, 120, 8, 3967);
     			attr_dev(div, "slot", "footer");
-    			attr_dev(div, "class", " f1 svelte-1e6xwaj");
-    			add_location(div, file$9, 115, 4, 3739);
+    			attr_dev(div, "class", " f1 svelte-1p540nx");
+    			add_location(div, file$9, 115, 4, 3783);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -58258,7 +58284,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			t1 = space();
     			create_component(modal.$$.fragment);
-    			add_location(div, file$9, 96, 0, 3110);
+    			add_location(div, file$9, 96, 0, 3154);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -59817,7 +59843,7 @@ var app = (function () {
     	return block;
     }
 
-    // (169:4) {:then _}
+    // (172:4) {:then _}
     function create_then_block$1(ctx) {
     	let div;
     	let img;
@@ -59836,10 +59862,10 @@ var app = (function () {
     			if (img.src !== (img_src_value = /*_*/ ctx[42] || /*defaultPhoto*/ ctx[15])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "class", "card-img-top");
     			attr_dev(img, "alt", "...");
-    			add_location(img, file$c, 173, 8, 4825);
-    			attr_dev(div, "class", "parentimg svelte-1aeuq3z");
+    			add_location(img, file$c, 176, 8, 4751);
+    			attr_dev(div, "class", "parentimg svelte-1u7eaip");
     			add_render_callback(() => /*div_elementresize_handler*/ ctx[27].call(div));
-    			add_location(div, file$c, 169, 6, 4712);
+    			add_location(div, file$c, 172, 6, 4638);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -59879,14 +59905,14 @@ var app = (function () {
     		block,
     		id: create_then_block$1.name,
     		type: "then",
-    		source: "(169:4) {:then _}",
+    		source: "(172:4) {:then _}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (176:8) {#if toArray(storage).length == 0}
+    // (179:8) {#if toArray(storage).length == 0}
     function create_if_block_2$3(ctx) {
     	let img;
     	let img_src_value;
@@ -59895,11 +59921,11 @@ var app = (function () {
     		c: function create() {
     			img = element("img");
     			if (img.src !== (img_src_value = /*soldoutPhoto*/ ctx[16])) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "img2 svelte-1aeuq3z");
+    			attr_dev(img, "class", "img2 svelte-1u7eaip");
     			attr_dev(img, "alt", "...");
     			attr_dev(img, "width", /*imgwid*/ ctx[11]);
     			attr_dev(img, "height", /*imghid*/ ctx[12]);
-    			add_location(img, file$c, 176, 10, 4945);
+    			add_location(img, file$c, 179, 10, 4871);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -59922,14 +59948,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$3.name,
     		type: "if",
-    		source: "(176:8) {#if toArray(storage).length == 0}",
+    		source: "(179:8) {#if toArray(storage).length == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (163:51)         <div class="parentimg">          <img src={defaultPhoto}
+    // (166:51)         <div class="parentimg">          <img src={defaultPhoto}
     function create_pending_block$1(ctx) {
     	let div;
     	let img0;
@@ -59945,15 +59971,15 @@ var app = (function () {
     			t = space();
     			img1 = element("img");
     			if (img0.src !== (img0_src_value = /*defaultPhoto*/ ctx[15])) attr_dev(img0, "src", img0_src_value);
-    			attr_dev(img0, "class", "card-img-top img1 svelte-1aeuq3z");
+    			attr_dev(img0, "class", "card-img-top img1 svelte-1u7eaip");
     			attr_dev(img0, "alt", "...");
-    			add_location(img0, file$c, 164, 8, 4552);
+    			add_location(img0, file$c, 167, 8, 4478);
     			if (img1.src !== (img1_src_value = /*soldoutPhoto*/ ctx[16])) attr_dev(img1, "src", img1_src_value);
-    			attr_dev(img1, "class", "img2 svelte-1aeuq3z");
+    			attr_dev(img1, "class", "img2 svelte-1u7eaip");
     			attr_dev(img1, "alt", "...");
-    			add_location(img1, file$c, 166, 8, 4626);
-    			attr_dev(div, "class", "parentimg svelte-1aeuq3z");
-    			add_location(div, file$c, 163, 6, 4519);
+    			add_location(img1, file$c, 169, 8, 4552);
+    			attr_dev(div, "class", "parentimg svelte-1u7eaip");
+    			add_location(div, file$c, 166, 6, 4445);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -59971,14 +59997,14 @@ var app = (function () {
     		block,
     		id: create_pending_block$1.name,
     		type: "pending",
-    		source: "(163:51)         <div class=\\\"parentimg\\\">          <img src={defaultPhoto}",
+    		source: "(166:51)         <div class=\\\"parentimg\\\">          <img src={defaultPhoto}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (193:6) {#if isExpand}
+    // (196:6) {#if isExpand}
     function create_if_block_1$5(ctx) {
     	let div;
     	let hr;
@@ -60042,17 +60068,17 @@ var app = (function () {
     			t1 = space();
     			button = element("button");
     			t2 = text("add to basket");
-    			add_location(hr, file$c, 197, 10, 5481);
+    			add_location(hr, file$c, 200, 10, 5407);
     			attr_dev(button, "href", "#");
 
     			attr_dev(button, "class", button_class_value = "btn " + (/*possibleItems*/ ctx[2].length == 0
     			? "disabled"
-    			: "btn-primary") + " svelte-1aeuq3z");
+    			: "btn-primary") + " svelte-1u7eaip");
 
     			button.disabled = button_disabled_value = /*possibleItems*/ ctx[2].length == 0;
-    			add_location(button, file$c, 203, 10, 5652);
+    			add_location(button, file$c, 206, 10, 5578);
     			attr_dev(div, "class", "w-16 md:w-32 lg:w-48");
-    			add_location(div, file$c, 193, 8, 5343);
+    			add_location(div, file$c, 196, 8, 5269);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -60094,7 +60120,7 @@ var app = (function () {
 
     			if (!current || dirty[0] & /*possibleItems*/ 4 && button_class_value !== (button_class_value = "btn " + (/*possibleItems*/ ctx[2].length == 0
     			? "disabled"
-    			: "btn-primary") + " svelte-1aeuq3z")) {
+    			: "btn-primary") + " svelte-1u7eaip")) {
     				attr_dev(button, "class", button_class_value);
     			}
 
@@ -60133,14 +60159,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$5.name,
     		type: "if",
-    		source: "(193:6) {#if isExpand}",
+    		source: "(196:6) {#if isExpand}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (213:2) {#if isExpand}
+    // (216:2) {#if isExpand}
     function create_if_block$c(ctx) {
     	let button0;
     	let t1;
@@ -60156,9 +60182,9 @@ var app = (function () {
     			button1 = element("button");
     			button1.textContent = "Edit";
     			set_style(button0, "background", "rgba(0,0,0,0)");
-    			add_location(button0, file$c, 213, 4, 5939);
+    			add_location(button0, file$c, 216, 4, 5865);
     			set_style(button1, "background", "rgba(0,0,0,0)");
-    			add_location(button1, file$c, 216, 4, 6050);
+    			add_location(button1, file$c, 219, 4, 5976);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button0, anchor);
@@ -60188,14 +60214,14 @@ var app = (function () {
     		block,
     		id: create_if_block$c.name,
     		type: "if",
-    		source: "(213:2) {#if isExpand}",
+    		source: "(216:2) {#if isExpand}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (224:2) <div slot="header">
+    // (227:2) <div slot="header">
     function create_header_slot$1(ctx) {
     	let div;
     	let h5;
@@ -60215,14 +60241,14 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "×";
     			attr_dev(h5, "class", "title");
-    			add_location(h5, file$c, 224, 4, 6218);
+    			add_location(h5, file$c, 227, 4, 6144);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$c, 226, 6, 6334);
+    			add_location(span, file$c, 229, 6, 6260);
     			attr_dev(button, "type", "button");
     			attr_dev(button, "class", "close");
-    			add_location(button, file$c, 225, 4, 6256);
+    			add_location(button, file$c, 228, 4, 6182);
     			attr_dev(div, "slot", "header");
-    			add_location(div, file$c, 223, 2, 6193);
+    			add_location(div, file$c, 226, 2, 6119);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -60248,14 +60274,14 @@ var app = (function () {
     		block,
     		id: create_header_slot$1.name,
     		type: "slot",
-    		source: "(224:2) <div slot=\\\"header\\\">",
+    		source: "(227:2) <div slot=\\\"header\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (231:2) <div slot="content">
+    // (234:2) <div slot="content">
     function create_content_slot$1(ctx) {
     	let div;
     	let newitem;
@@ -60280,7 +60306,7 @@ var app = (function () {
     			div = element("div");
     			create_component(newitem.$$.fragment);
     			attr_dev(div, "slot", "content");
-    			add_location(div, file$c, 230, 2, 6412);
+    			add_location(div, file$c, 233, 2, 6338);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -60318,14 +60344,14 @@ var app = (function () {
     		block,
     		id: create_content_slot$1.name,
     		type: "slot",
-    		source: "(231:2) <div slot=\\\"content\\\">",
+    		source: "(234:2) <div slot=\\\"content\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (235:2) <div slot="footer">
+    // (238:2) <div slot="footer">
     function create_footer_slot$1(ctx) {
     	let div;
     	let button0;
@@ -60348,12 +60374,12 @@ var app = (function () {
     			t4 = text(/*errmsg*/ ctx[19]);
     			attr_dev(button0, "type", "button");
     			attr_dev(button0, "class", "btn btn-secondary");
-    			add_location(button0, file$c, 235, 4, 6528);
+    			add_location(button0, file$c, 238, 4, 6454);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-primary");
-    			add_location(button1, file$c, 239, 4, 6651);
+    			add_location(button1, file$c, 242, 4, 6577);
     			attr_dev(div, "slot", "footer");
-    			add_location(div, file$c, 234, 2, 6503);
+    			add_location(div, file$c, 237, 2, 6429);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -60384,14 +60410,14 @@ var app = (function () {
     		block,
     		id: create_footer_slot$1.name,
     		type: "slot",
-    		source: "(235:2) <div slot=\\\"footer\\\">",
+    		source: "(238:2) <div slot=\\\"footer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (223:0) <Modal bind:isOpen>
+    // (226:0) <Modal bind:isOpen>
     function create_default_slot$2(ctx) {
     	let t0;
     	let hr0;
@@ -60408,8 +60434,8 @@ var app = (function () {
     			t2 = space();
     			hr1 = element("hr");
     			t3 = space();
-    			add_location(hr0, file$c, 229, 2, 6402);
-    			add_location(hr1, file$c, 233, 2, 6493);
+    			add_location(hr0, file$c, 232, 2, 6328);
+    			add_location(hr1, file$c, 236, 2, 6419);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -60436,7 +60462,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$2.name,
     		type: "slot",
-    		source: "(223:0) <Modal bind:isOpen>",
+    		source: "(226:0) <Modal bind:isOpen>",
     		ctx
     	});
 
@@ -60529,16 +60555,16 @@ var app = (function () {
     			t7 = space();
     			create_component(modal.$$.fragment);
     			attr_dev(h5, "class", "card-title");
-    			add_location(h5, file$c, 187, 6, 5179);
-    			attr_dev(p, "class", "card-text greeny svelte-1aeuq3z");
-    			add_location(p, file$c, 190, 6, 5248);
-    			attr_dev(div0, "class", "card-body greeny svelte-1aeuq3z");
-    			add_location(div0, file$c, 186, 4, 5141);
-    			attr_dev(div1, "class", "card item greeny svelte-1aeuq3z");
+    			add_location(h5, file$c, 190, 6, 5105);
+    			attr_dev(p, "class", "card-text greeny svelte-1u7eaip");
+    			add_location(p, file$c, 193, 6, 5174);
+    			attr_dev(div0, "class", "card-body greeny svelte-1u7eaip");
+    			add_location(div0, file$c, 189, 4, 5067);
+    			attr_dev(div1, "class", "card item greeny svelte-1u7eaip");
     			set_style(div1, "width", "18rem");
-    			add_location(div1, file$c, 156, 2, 4341);
-    			attr_dev(div2, "class", div2_class_value = "baciItem " + /*Class*/ ctx[4] + " svelte-1aeuq3z");
-    			add_location(div2, file$c, 155, 0, 4307);
+    			add_location(div1, file$c, 159, 2, 4267);
+    			attr_dev(div2, "class", div2_class_value = "baciItem " + /*Class*/ ctx[4] + " svelte-1u7eaip");
+    			add_location(div2, file$c, 158, 0, 4233);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -60623,7 +60649,7 @@ var app = (function () {
     				if_block1 = null;
     			}
 
-    			if (!current || dirty[0] & /*Class*/ 16 && div2_class_value !== (div2_class_value = "baciItem " + /*Class*/ ctx[4] + " svelte-1aeuq3z")) {
+    			if (!current || dirty[0] & /*Class*/ 16 && div2_class_value !== (div2_class_value = "baciItem " + /*Class*/ ctx[4] + " svelte-1u7eaip")) {
     				attr_dev(div2, "class", div2_class_value);
     			}
 
@@ -61223,7 +61249,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (36:0) {:else}
+    // (35:0) {:else}
     function create_else_block$6(ctx) {
     	let t;
 
@@ -61246,14 +61272,14 @@ var app = (function () {
     		block,
     		id: create_else_block$6.name,
     		type: "else",
-    		source: "(36:0) {:else}",
+    		source: "(35:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (21:0) {#if items[0]}
+    // (20:0) {#if items[0]}
     function create_if_block$d(ctx) {
     	let div;
     	let current;
@@ -61277,10 +61303,10 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(div, "class", "row viewField  svelte-1azj8gw");
+    			attr_dev(div, "class", "row viewField  svelte-rck3aj");
     			set_style(div, "height", /*height*/ ctx[3] + "px", 1);
     			set_style(div, "max-width", /*width*/ ctx[4] + "px", 1);
-    			add_location(div, file$d, 21, 2, 425);
+    			add_location(div, file$d, 20, 2, 463);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -61356,14 +61382,14 @@ var app = (function () {
     		block,
     		id: create_if_block$d.name,
     		type: "if",
-    		source: "(21:0) {#if items[0]}",
+    		source: "(20:0) {#if items[0]}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (25:4) {#each items as _item, i}
+    // (24:4) {#each items as _item, i}
     function create_each_block$3(ctx) {
     	let div;
     	let item;
@@ -61402,7 +61428,7 @@ var app = (function () {
     			create_component(item.$$.fragment);
     			t = space();
     			attr_dev(div, "class", "col display-flex");
-    			add_location(div, file$d, 25, 6, 571);
+    			add_location(div, file$d, 24, 6, 609);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -61464,7 +61490,7 @@ var app = (function () {
     		block,
     		id: create_each_block$3.name,
     		type: "each",
-    		source: "(25:4) {#each items as _item, i}",
+    		source: "(24:4) {#each items as _item, i}",
     		ctx
     	});
 
@@ -61795,20 +61821,20 @@ var app = (function () {
     			t5 = space();
     			if (default_slot) default_slot.c();
     			attr_dev(h4, "class", "col-2");
-    			add_location(h4, file$e, 51, 4, 1236);
-    			attr_dev(input, "class", " col-5 cup svelte-1rn40xx");
+    			add_location(h4, file$e, 53, 4, 1235);
+    			attr_dev(input, "class", " col-5 cup svelte-1lbewyz");
     			set_style(input, "height", "2.333em", 1);
     			set_style(input, "margin-right", "1%");
-    			add_location(input, file$e, 52, 4, 1273);
+    			add_location(input, file$e, 54, 4, 1272);
     			attr_dev(div0, "class", "col-sm-2");
-    			add_location(div0, file$e, 57, 4, 1402);
+    			add_location(div0, file$e, 59, 4, 1401);
     			attr_dev(div1, "class", "col-12 row");
-    			add_location(div1, file$e, 50, 2, 1206);
-    			attr_dev(div2, "class", div2_class_value = "col-12 row " + (/*isOpen*/ ctx[8] ? "bf2" : "bf") + " svelte-1rn40xx");
-    			add_location(div2, file$e, 73, 2, 1811);
-    			attr_dev(div3, "class", "row botomborder svelte-1rn40xx");
+    			add_location(div1, file$e, 52, 2, 1205);
+    			attr_dev(div2, "class", div2_class_value = "col-12 row " + (/*isOpen*/ ctx[8] ? "bf2" : "bf") + " svelte-1lbewyz");
+    			add_location(div2, file$e, 75, 2, 1810);
+    			attr_dev(div3, "class", "row botomborder svelte-1lbewyz");
     			set_style(div3, "height", /*height*/ ctx[2] + "px", 1);
-    			add_location(div3, file$e, 49, 0, 1136);
+    			add_location(div3, file$e, 51, 0, 1135);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -62251,10 +62277,10 @@ var app = (function () {
 
     /* src\pages\Items.svelte generated by Svelte v3.31.0 */
 
-    const { console: console_1$1 } = globals;
+    const { Object: Object_1, console: console_1$1 } = globals;
     const file$f = "src\\pages\\Items.svelte";
 
-    // (153:2) {#if viewItems[0]}
+    // (177:2) {#if viewItems[0]}
     function create_if_block_2$4(ctx) {
     	let itemsviewer;
     	let current;
@@ -62304,14 +62330,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$4.name,
     		type: "if",
-    		source: "(153:2) {#if viewItems[0]}",
+    		source: "(177:2) {#if viewItems[0]}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (142:0) <Collection path={`items`} let:data={_et} let:ref={itemsRef}>
+    // (166:0) <Collection path={`items`} let:data={_et} let:ref={itemsRef}>
     function create_default_slot_1(ctx) {
     	let globalizer;
     	let updating_data2;
@@ -62328,7 +62354,7 @@ var app = (function () {
     		/*globalizer_data2_binding*/ ctx[17].call(null, value);
     	}
 
-    	let globalizer_props = { data: /*_et*/ ctx[32] };
+    	let globalizer_props = { data: /*_et*/ ctx[33] };
 
     	if (/*etems*/ ctx[0] !== void 0) {
     		globalizer_props.data2 = /*etems*/ ctx[0];
@@ -62393,7 +62419,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const globalizer_changes = {};
-    			if (dirty[1] & /*_et*/ 2) globalizer_changes.data = /*_et*/ ctx[32];
+    			if (dirty[1] & /*_et*/ 4) globalizer_changes.data = /*_et*/ ctx[33];
 
     			if (!updating_data2 && dirty[0] & /*etems*/ 1) {
     				updating_data2 = true;
@@ -62476,14 +62502,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(142:0) <Collection path={`items`} let:data={_et} let:ref={itemsRef}>",
+    		source: "(166:0) <Collection path={`items`} let:data={_et} let:ref={itemsRef}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (170:2) {:else}
+    // (194:2) {:else}
     function create_else_block$7(ctx) {
     	let div3;
     	let div0;
@@ -62536,26 +62562,26 @@ var app = (function () {
     			button2 = element("button");
     			button2.textContent = "Create";
     			attr_dev(h5, "class", "modal-title");
-    			add_location(h5, file$f, 172, 8, 4698);
+    			add_location(h5, file$f, 196, 8, 6064);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$f, 177, 10, 4870);
+    			add_location(span, file$f, 201, 10, 6236);
     			attr_dev(button0, "type", "button");
-    			attr_dev(button0, "class", "close bg-danger svelte-1skx4d5");
-    			add_location(button0, file$f, 173, 8, 4745);
-    			attr_dev(div0, "class", "modal-header f1 svelte-1skx4d5");
-    			add_location(div0, file$f, 171, 6, 4659);
-    			attr_dev(div1, "class", "modal-body f2 svelte-1skx4d5");
-    			add_location(div1, file$f, 180, 6, 4950);
+    			attr_dev(button0, "class", "close bg-danger svelte-1v9e5qi");
+    			add_location(button0, file$f, 197, 8, 6111);
+    			attr_dev(div0, "class", "modal-header f1 svelte-1v9e5qi");
+    			add_location(div0, file$f, 195, 6, 6025);
+    			attr_dev(div1, "class", "modal-body f2 svelte-1v9e5qi");
+    			add_location(div1, file$f, 204, 6, 6316);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-secondary");
-    			add_location(button1, file$f, 186, 8, 5106);
+    			add_location(button1, file$f, 210, 8, 6472);
     			attr_dev(button2, "type", "button");
     			attr_dev(button2, "class", "btn btn-primary");
-    			add_location(button2, file$f, 190, 8, 5245);
-    			attr_dev(div2, "class", "modal-footer f1 svelte-1skx4d5");
-    			add_location(div2, file$f, 185, 6, 5067);
-    			attr_dev(div3, "class", "poper svelte-1skx4d5");
-    			add_location(div3, file$f, 170, 4, 4632);
+    			add_location(button2, file$f, 214, 8, 6611);
+    			attr_dev(div2, "class", "modal-footer f1 svelte-1v9e5qi");
+    			add_location(div2, file$f, 209, 6, 6433);
+    			attr_dev(div3, "class", "poper svelte-1v9e5qi");
+    			add_location(div3, file$f, 194, 4, 5998);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -62613,14 +62639,14 @@ var app = (function () {
     		block,
     		id: create_else_block$7.name,
     		type: "else",
-    		source: "(170:2) {:else}",
+    		source: "(194:2) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (166:23) 
+    // (190:23) 
     function create_if_block_1$6(ctx) {
     	let t0;
     	let t1;
@@ -62636,7 +62662,7 @@ var app = (function () {
     			t2 = space();
     			button = element("button");
     			button.textContent = "return";
-    			add_location(button, file$f, 168, 4, 4563);
+    			add_location(button, file$f, 192, 4, 5929);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -62668,14 +62694,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$6.name,
     		type: "if",
-    		source: "(166:23) ",
+    		source: "(190:23) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (164:2) {#if state == 1}
+    // (188:2) {#if state == 1}
     function create_if_block$e(ctx) {
     	let t;
 
@@ -62698,14 +62724,14 @@ var app = (function () {
     		block,
     		id: create_if_block$e.name,
     		type: "if",
-    		source: "(164:2) {#if state == 1}",
+    		source: "(188:2) {#if state == 1}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (163:0) <Modal bind:open={isOpen}>
+    // (187:0) <Modal bind:open={isOpen}>
     function create_default_slot$3(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -62779,7 +62805,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(163:0) <Modal bind:open={isOpen}>",
+    		source: "(187:0) <Modal bind:open={isOpen}>",
     		ctx
     	});
 
@@ -62799,8 +62825,8 @@ var app = (function () {
     				$$slots: {
     					default: [
     						create_default_slot_1,
-    						({ data: _et, ref: itemsRef }) => ({ 32: _et, 33: itemsRef }),
-    						({ data: _et, ref: itemsRef }) => [0, (_et ? 2 : 0) | (itemsRef ? 4 : 0)]
+    						({ data: _et, ref: itemsRef }) => ({ 33: _et, 34: itemsRef }),
+    						({ data: _et, ref: itemsRef }) => [0, (_et ? 4 : 0) | (itemsRef ? 8 : 0)]
     					]
     				},
     				$$scope: { ctx }
@@ -62842,14 +62868,14 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const collection_changes = {};
 
-    			if (dirty[0] & /*addToBasket, viewItems, itmheight, itmWidth, items, srchheight, categories, sellers, etems*/ 7739 | dirty[1] & /*$$scope, _et*/ 10) {
+    			if (dirty[0] & /*addToBasket, viewItems, itmheight, itmWidth, items, srchheight, categories, sellers, etems*/ 7739 | dirty[1] & /*$$scope, _et*/ 20) {
     				collection_changes.$$scope = { dirty, ctx };
     			}
 
     			collection.$set(collection_changes);
     			const modal_changes = {};
 
-    			if (dirty[0] & /*state, errmsg, isOpen, interdata*/ 452 | dirty[1] & /*$$scope*/ 8) {
+    			if (dirty[0] & /*state, errmsg, isOpen, interdata*/ 452 | dirty[1] & /*$$scope*/ 16) {
     				modal_changes.$$scope = { dirty, ctx };
     			}
 
@@ -62893,6 +62919,43 @@ var app = (function () {
     function instance$k($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("Items", slots, []);
+
+    	var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+    		function adopt(value) {
+    			return value instanceof P
+    			? value
+    			: new P(function (resolve) {
+    						resolve(value);
+    					});
+    		}
+
+    		return new (P || (P = Promise))(function (resolve, reject) {
+    				function fulfilled(value) {
+    					try {
+    						step(generator.next(value));
+    					} catch(e) {
+    						reject(e);
+    					}
+    				}
+
+    				function rejected(value) {
+    					try {
+    						step(generator["throw"](value));
+    					} catch(e) {
+    						reject(e);
+    					}
+    				}
+
+    				function step(result) {
+    					result.done
+    					? resolve(result.value)
+    					: adopt(result.value).then(fulfilled, rejected);
+    				}
+
+    				step((generator = generator.apply(thisArg, _arguments || [])).next());
+    			});
+    	};
+
     	
     	let db = firebase$1.database();
     	let fStorage = firebase$1.storage();
@@ -62907,96 +62970,108 @@ var app = (function () {
     	let state = 0;
     	let errmsg = "";
 
-    	async function getItems() {
-    		return db.ref(`items`).on("value", snap => {
-    			$$invalidate(0, etems = snap.val() || {});
+    	function getItems() {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			return db.ref(`items`).on("value", snap => {
+    				$$invalidate(0, etems = snap.val() || {});
+    			});
     		});
     	}
 
     	//getItems();
-    	async function getdata() {
-    		$$invalidate(2, interdata = await getInterData(db, "items"));
-    		return interdata;
+    	function getdata() {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			$$invalidate(2, interdata = yield getInterData(db, "items"));
+    			return interdata;
+    		});
     	}
 
     	function takeItem(er) {
     		delete etems[er.id].storage[er.storageId];
-    		$$invalidate(0, etems = { ...etems });
+    		$$invalidate(0, etems = Object.assign({}, etems));
     	}
 
-    	async function setItem(id, data) {
-    		return db.ref(`items/${id}`).set(data);
+    	function setItem(id, data) {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			return db.ref(`items/${id}`).set(data);
+    		});
     	}
 
-    	async function createNewItem() {
-    		$$invalidate(7, state = 1);
+    	function createNewItem() {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			$$invalidate(7, state = 1);
 
-    		try {
-    			//@ts-ignore
-    			let _newItem = {};
+    			try {
+    				//@ts-ignore
+    				let _newItem = {};
 
-    			let barcodeId = getUnicId(etems);
+    				let barcodeId = getUnicId(etems);
 
-    			for (let k = 0; k < interdata.length; k++) {
-    				const d = interdata[k];
+    				for (let k = 0; k < interdata.length; k++) {
+    					const d = interdata[k];
 
-    				switch (d.answerType) {
-    					case "barcode":
-    						if (etems[d.data]) {
-    							$$invalidate(7, state = 0);
-    							$$invalidate(8, errmsg = "this barcode already exists");
-    							$$invalidate(6, isOpen = true);
-    							return;
-    						} else {
-    							barcodeId = d.data;
-    						}
-    					case "file":
-    						console.log("uplaoding image..");
-    						let regurl = `shoe_${interdata[0].data}_${Math.round(Math.random() * 10000)}`;
-    						let imgFef = fStorage.ref("images").child(regurl);
-    						await imgFef.put(d.data).then(snap => {
-    							_newItem.photoURL = regurl;
-    						});
-    						console.log("finished uplaoding The image!");
-    						break;
-    					case "lister":
-    						//@ts-ignore
-    						_newItem[d.name] = d.title;
-    						break;
-    					default:
-    						//@ts-ignore
-    						_newItem[d.name] = d.data;
-    						break;
+    					switch (d.answerType) {
+    						case "barcode":
+    							if (etems[d.data]) {
+    								$$invalidate(7, state = 0);
+    								$$invalidate(8, errmsg = "this barcode already exists");
+    								$$invalidate(6, isOpen = true);
+    								return;
+    							} else {
+    								barcodeId = d.data;
+    							}
+    						case "file":
+    							console.log("uplaoding image..");
+    							let regurl = `shoe_${interdata[0].data}_${Math.round(Math.random() * 10000)}`;
+    							let imgFef = fStorage.ref("images").child(regurl);
+    							yield imgFef.put(d.data).then(snap => {
+    								_newItem.photoURL = regurl;
+    							});
+    							console.log("finished uplaoding The image!");
+    							break;
+    						case "lister":
+    							//@ts-ignore
+    							_newItem[d.name] = d.title;
+    							break;
+    						default:
+    							//@ts-ignore
+    							_newItem[d.name] = d.data;
+    							break;
+    					}
     				}
+
+    				console.log(_newItem);
+    				let _id;
+    				yield fsdb.collection(`items/`).doc(`${_id}`).set(_newItem);
+    				$$invalidate(7, state = 0);
+    				$$invalidate(6, isOpen = false);
+    			} catch(err) {
+    				$$invalidate(8, errmsg = err);
+    				$$invalidate(7, state = 2);
     			}
-
-    			console.log(_newItem);
-    			let _id;
-    			await fsdb.collection(`items/`).doc(`${_id}`).set(_newItem);
-    			$$invalidate(7, state = 0);
-    			$$invalidate(6, isOpen = false);
-    		} catch(err) {
-    			$$invalidate(8, errmsg = err);
-    			$$invalidate(7, state = 2);
-    		}
+    		});
     	}
 
-    	async function requestOpen(dd, dd2) {
-    		await getdata();
+    	function requestOpen(dd, dd2) {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			yield getdata();
 
-    		if (dd == "add new") {
-    			$$invalidate(2, interdata = interdata.map(a => {
-    				return { ...a, ...{ data: dd2[a.title] } };
-    			}));
+    			if (dd == "add new") {
+    				$$invalidate(2, interdata = interdata.map(a => {
+    					return Object.assign(Object.assign({}, a), { data: dd2[a.title] });
+    				}));
 
-    			$$invalidate(6, isOpen = true);
-    		}
+    				$$invalidate(6, isOpen = true);
+    			}
+    		});
     	}
 
-    	async function takeback(item) {
-    		//@ts-ignore
-    		await db.ref(`items/${item.id}/storage/${item.storageId}`).on("value", snap => {
-    			$$invalidate(0, etems[item.id].storage[item.storageId] = snap.val() || {}, etems);
+    	function takeback(item) {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			//@ts-ignore
+    			yield db.ref(`items/${item.id}/storage/${item.storageId}`).on("value", snap => {
+    				$$invalidate(0, etems[item.id].storage[item.storageId] = snap.val() || {}, etems);
+    			});
     		});
     	}
 
@@ -63006,7 +63081,7 @@ var app = (function () {
     	let viewItems = [];
     	const writable_props = ["addToBasket", "etems"];
 
-    	Object.keys($$props).forEach(key => {
+    	Object_1.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$1.warn(`<Items> was created with unknown prop '${key}'`);
     	});
 
@@ -63049,6 +63124,7 @@ var app = (function () {
     	};
 
     	$$self.$capture_state = () => ({
+    		__awaiter,
     		Collection,
     		ItemsViewer,
     		SearchBar,
@@ -63086,6 +63162,7 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
+    		if ("__awaiter" in $$props) __awaiter = $$props.__awaiter;
     		if ("db" in $$props) db = $$props.db;
     		if ("fStorage" in $$props) fStorage = $$props.fStorage;
     		if ("fsdb" in $$props) fsdb = $$props.fsdb;
@@ -63210,8 +63287,8 @@ var app = (function () {
     		c: function create() {
     			h5 = element("h5");
     			t = text(t_value);
-    			attr_dev(h5, "class", "log svelte-1r7g37r");
-    			add_location(h5, file$g, 9, 0, 148);
+    			attr_dev(h5, "class", "log svelte-1amaf2i");
+    			add_location(h5, file$g, 8, 0, 184);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -63295,11 +63372,11 @@ var app = (function () {
 
     function get_each_context$4(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
-    // (27:4) {#if logs[0]}
+    // (37:4) {#if logs[0]}
     function create_if_block$f(ctx) {
     	let each_1_anchor;
     	let current;
@@ -63388,20 +63465,20 @@ var app = (function () {
     		block,
     		id: create_if_block$f.name,
     		type: "if",
-    		source: "(27:4) {#if logs[0]}",
+    		source: "(37:4) {#if logs[0]}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (28:8) {#each logs as log}
+    // (38:8) {#each logs as log}
     function create_each_block$4(ctx) {
     	let logitem;
     	let current;
 
     	logitem = new LogItem({
-    			props: { log: /*log*/ ctx[4] },
+    			props: { log: /*log*/ ctx[5] },
     			$$inline: true
     		});
 
@@ -63415,7 +63492,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const logitem_changes = {};
-    			if (dirty & /*logs*/ 1) logitem_changes.log = /*log*/ ctx[4];
+    			if (dirty & /*logs*/ 1) logitem_changes.log = /*log*/ ctx[5];
     			logitem.$set(logitem_changes);
     		},
     		i: function intro(local) {
@@ -63436,7 +63513,7 @@ var app = (function () {
     		block,
     		id: create_each_block$4.name,
     		type: "each",
-    		source: "(28:8) {#each logs as log}",
+    		source: "(38:8) {#each logs as log}",
     		ctx
     	});
 
@@ -63452,8 +63529,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			if (if_block) if_block.c();
-    			attr_dev(div, "class", "console svelte-zknkjf");
-    			add_location(div, file$h, 25, 0, 632);
+    			attr_dev(div, "class", "console svelte-1exew05");
+    			add_location(div, file$h, 35, 0, 1394);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -63516,13 +63593,52 @@ var app = (function () {
     function instance$m($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("Console", slots, []);
+
+    	var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+    		function adopt(value) {
+    			return value instanceof P
+    			? value
+    			: new P(function (resolve) {
+    						resolve(value);
+    					});
+    		}
+
+    		return new (P || (P = Promise))(function (resolve, reject) {
+    				function fulfilled(value) {
+    					try {
+    						step(generator.next(value));
+    					} catch(e) {
+    						reject(e);
+    					}
+    				}
+
+    				function rejected(value) {
+    					try {
+    						step(generator["throw"](value));
+    					} catch(e) {
+    						reject(e);
+    					}
+    				}
+
+    				function step(result) {
+    					result.done
+    					? resolve(result.value)
+    					: adopt(result.value).then(fulfilled, rejected);
+    				}
+
+    				step((generator = generator.apply(thisArg, _arguments || [])).next());
+    			});
+    	};
+
     	let db = firebase$1.database();
     	let fStorage = firebase$1.storage();
     	let logs = [];
 
-    	async function getLogs() {
-    		await db.ref("logs").on("value", snap => {
-    			$$invalidate(0, logs = toArray(snap.val() || {}) || []);
+    	function getLogs() {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			yield db.ref("logs").on("value", snap => {
+    				$$invalidate(0, logs = toArray(snap.val() || {}) || []);
+    			});
     		});
     	}
 
@@ -63534,6 +63650,7 @@ var app = (function () {
     	});
 
     	$$self.$capture_state = () => ({
+    		__awaiter,
     		firebase: firebase$1,
     		db,
     		fStorage,
@@ -63544,6 +63661,7 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
+    		if ("__awaiter" in $$props) __awaiter = $$props.__awaiter;
     		if ("db" in $$props) db = $$props.db;
     		if ("fStorage" in $$props) fStorage = $$props.fStorage;
     		if ("logs" in $$props) $$invalidate(0, logs = $$props.logs);
@@ -63571,9 +63689,11 @@ var app = (function () {
     }
 
     /* src\components\barcoder\barCodeReader.svelte generated by Svelte v3.31.0 */
+
+    const { Object: Object_1$1 } = globals;
     const file$i = "src\\components\\barcoder\\barCodeReader.svelte";
 
-    // (38:0) {#if item}
+    // (49:0) {#if item}
     function create_if_block$g(ctx) {
     	let item_1;
     	let current;
@@ -63629,7 +63749,7 @@ var app = (function () {
     		block,
     		id: create_if_block$g.name,
     		type: "if",
-    		source: "(38:0) {#if item}",
+    		source: "(49:0) {#if item}",
     		ctx
     	});
 
@@ -63652,7 +63772,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			if_block_anchor = empty();
     			attr_dev(input, "class", /*Class*/ ctx[1]);
-    			add_location(input, file$i, 36, 0, 880);
+    			add_location(input, file$i, 47, 0, 1696);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -63739,6 +63859,43 @@ var app = (function () {
     function instance$n($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("BarCodeReader", slots, []);
+
+    	var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+    		function adopt(value) {
+    			return value instanceof P
+    			? value
+    			: new P(function (resolve) {
+    						resolve(value);
+    					});
+    		}
+
+    		return new (P || (P = Promise))(function (resolve, reject) {
+    				function fulfilled(value) {
+    					try {
+    						step(generator.next(value));
+    					} catch(e) {
+    						reject(e);
+    					}
+    				}
+
+    				function rejected(value) {
+    					try {
+    						step(generator["throw"](value));
+    					} catch(e) {
+    						reject(e);
+    					}
+    				}
+
+    				function step(result) {
+    					result.done
+    					? resolve(result.value)
+    					: adopt(result.value).then(fulfilled, rejected);
+    				}
+
+    				step((generator = generator.apply(thisArg, _arguments || [])).next());
+    			});
+    	};
+
     	let db = firebase$1.database();
     	let fStorage = firebase$1.storage();
     	let fsdb = firebase$1.firestore();
@@ -63762,25 +63919,27 @@ var app = (function () {
     		}
     	}
 
-    	async function getItem(id) {
-    		//@ts-ignore
-    		return db.ref(`${dir}/${id}`).once("value", snap => {
-    			let val = snap.val();
+    	function getItem(id) {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			//@ts-ignore
+    			return db.ref(`${dir}/${id}`).once("value", snap => {
+    				let val = snap.val();
 
-    			if (!val) {
-    				alert(`this barcode (${id}) dosen't have an item asign to it in directory ${dir}`);
-    				$$invalidate(0, item = null);
-    				return;
-    			}
+    				if (!val) {
+    					alert(`this barcode (${id}) dosen't have an item asign to it in directory ${dir}`);
+    					$$invalidate(0, item = null);
+    					return;
+    				}
 
-    			$$invalidate(0, item = { ...val, ...{ id } });
+    				$$invalidate(0, item = Object.assign(Object.assign({}, val), { id }));
+    			});
     		});
     	}
 
     	let { takeItem } = $$props;
     	const writable_props = ["Class", "addToBasket", "item", "takeItem"];
 
-    	Object.keys($$props).forEach(key => {
+    	Object_1$1.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<BarCodeReader> was created with unknown prop '${key}'`);
     	});
 
@@ -63799,6 +63958,7 @@ var app = (function () {
     	};
 
     	$$self.$capture_state = () => ({
+    		__awaiter,
     		fb: firebase$1,
     		db,
     		fStorage,
@@ -63815,6 +63975,7 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
+    		if ("__awaiter" in $$props) __awaiter = $$props.__awaiter;
     		if ("db" in $$props) db = $$props.db;
     		if ("fStorage" in $$props) fStorage = $$props.fStorage;
     		if ("fsdb" in $$props) fsdb = $$props.fsdb;
@@ -63963,16 +64124,16 @@ var app = (function () {
     			t5 = space();
     			create_component(lister.$$.fragment);
     			attr_dev(h30, "class", "col-6");
-    			add_location(h30, file$j, 19, 8, 452);
+    			add_location(h30, file$j, 18, 8, 478);
     			attr_dev(div0, "class", "row");
-    			add_location(div0, file$j, 18, 4, 425);
-    			add_location(br, file$j, 22, 4, 579);
+    			add_location(div0, file$j, 17, 4, 451);
+    			add_location(br, file$j, 21, 4, 605);
     			attr_dev(h31, "class", "col-6");
-    			add_location(h31, file$j, 24, 8, 618);
+    			add_location(h31, file$j, 23, 8, 644);
     			attr_dev(div1, "class", "row");
-    			add_location(div1, file$j, 23, 4, 591);
-    			attr_dev(main, "class", "main svelte-1mpezbd");
-    			add_location(main, file$j, 17, 0, 400);
+    			add_location(div1, file$j, 22, 4, 617);
+    			attr_dev(main, "class", "main svelte-s4ic6n");
+    			add_location(main, file$j, 16, 0, 426);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -64164,7 +64325,7 @@ var app = (function () {
     const { console: console_1$2 } = globals;
     const file$k = "src\\components\\basketItem.svelte";
 
-    // (65:2) {#if wid > 250}
+    // (68:2) {#if wid > 250}
     function create_if_block$h(ctx) {
     	let button;
     	let mounted;
@@ -64173,8 +64334,8 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			button = element("button");
-    			attr_dev(button, "class", "bg-warn fa svelte-1ob84w2");
-    			add_location(button, file$k, 64, 17, 1894);
+    			attr_dev(button, "class", "bg-warn fa svelte-1lyqoqi");
+    			add_location(button, file$k, 67, 17, 1973);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -64196,7 +64357,7 @@ var app = (function () {
     		block,
     		id: create_if_block$h.name,
     		type: "if",
-    		source: "(65:2) {#if wid > 250}",
+    		source: "(68:2) {#if wid > 250}",
     		ctx
     	});
 
@@ -64265,29 +64426,29 @@ var app = (function () {
     			h54 = element("h5");
     			t11 = text(/*size*/ ctx[5]);
     			attr_dev(h50, "class", "card-title");
-    			add_location(h50, file$k, 66, 4, 1989);
+    			add_location(h50, file$k, 69, 4, 2068);
     			attr_dev(h6, "class", "card-subtitle mb-2 ");
-    			add_location(h6, file$k, 67, 4, 2034);
+    			add_location(h6, file$k, 70, 4, 2113);
     			attr_dev(h51, "class", "col");
-    			add_location(h51, file$k, 73, 8, 2200);
+    			add_location(h51, file$k, 76, 8, 2279);
     			attr_dev(h52, "class", "col");
     			set_style(h52, "color", /*color*/ ctx[4], 1);
-    			add_location(h52, file$k, 74, 8, 2237);
+    			add_location(h52, file$k, 77, 8, 2316);
     			attr_dev(div0, "class", "row col-12");
-    			add_location(div0, file$k, 72, 6, 2166);
+    			add_location(div0, file$k, 75, 6, 2245);
     			attr_dev(h53, "class", "col");
-    			add_location(h53, file$k, 77, 8, 2354);
+    			add_location(h53, file$k, 80, 8, 2433);
     			attr_dev(h54, "class", "col");
-    			add_location(h54, file$k, 78, 8, 2390);
+    			add_location(h54, file$k, 81, 8, 2469);
     			attr_dev(div1, "class", "row col-12");
-    			add_location(div1, file$k, 76, 6, 2320);
+    			add_location(div1, file$k, 79, 6, 2399);
     			attr_dev(div2, "class", "card-text row");
-    			add_location(div2, file$k, 71, 4, 2131);
+    			add_location(div2, file$k, 74, 4, 2210);
     			attr_dev(div3, "class", "card-body");
-    			add_location(div3, file$k, 65, 2, 1960);
-    			attr_dev(div4, "class", div4_class_value = "card tts " + /*Class*/ ctx[0] + " svelte-1ob84w2");
+    			add_location(div3, file$k, 68, 2, 2039);
+    			attr_dev(div4, "class", div4_class_value = "card tts " + /*Class*/ ctx[0] + " svelte-1lyqoqi");
     			add_render_callback(() => /*div4_elementresize_handler*/ ctx[10].call(div4));
-    			add_location(div4, file$k, 63, 0, 1822);
+    			add_location(div4, file$k, 66, 0, 1901);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -64345,7 +64506,7 @@ var app = (function () {
 
     			if (!current || dirty & /*size*/ 32) set_data_dev(t11, /*size*/ ctx[5]);
 
-    			if (!current || dirty & /*Class*/ 1 && div4_class_value !== (div4_class_value = "card tts " + /*Class*/ ctx[0] + " svelte-1ob84w2")) {
+    			if (!current || dirty & /*Class*/ 1 && div4_class_value !== (div4_class_value = "card tts " + /*Class*/ ctx[0] + " svelte-1lyqoqi")) {
     				attr_dev(div4, "class", div4_class_value);
     			}
     		},
@@ -64617,7 +64778,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (60:8) {#each basketItems as _, i}
+    // (62:8) {#each basketItems as _, i}
     function create_each_block$5(ctx) {
     	let basketitem;
     	let current;
@@ -64658,7 +64819,7 @@ var app = (function () {
     		block,
     		id: create_each_block$5.name,
     		type: "each",
-    		source: "(60:8) {#each basketItems as _, i}",
+    		source: "(62:8) {#each basketItems as _, i}",
     		ctx
     	});
 
@@ -64702,15 +64863,15 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(h2, file$l, 56, 2, 1117);
-    			add_location(br, file$l, 56, 18, 1133);
+    			add_location(h2, file$l, 58, 2, 1114);
+    			add_location(br, file$l, 58, 18, 1130);
     			attr_dev(div0, "class", "row");
-    			add_location(div0, file$l, 58, 4, 1202);
-    			attr_dev(div1, "class", "lfy svelte-dblfem");
+    			add_location(div0, file$l, 60, 4, 1199);
+    			attr_dev(div1, "class", "lfy svelte-1ucmq2m");
     			set_style(div1, "height", /*height*/ ctx[1] + "px !imporant");
-    			add_location(div1, file$l, 57, 2, 1143);
-    			attr_dev(div2, "class", "h-100 lefty sidebar  svelte-dblfem");
-    			add_location(div2, file$l, 55, 0, 1078);
+    			add_location(div1, file$l, 59, 2, 1140);
+    			attr_dev(div2, "class", "h-100 lefty sidebar  svelte-1ucmq2m");
+    			add_location(div2, file$l, 57, 0, 1075);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -64950,7 +65111,7 @@ var app = (function () {
     /* src\components\auth\thisUser.svelte generated by Svelte v3.31.0 */
     const file$m = "src\\components\\auth\\thisUser.svelte";
 
-    // (19:0) {:catch}
+    // (28:0) {:catch}
     function create_catch_block$2(ctx) {
     	let t;
 
@@ -64971,14 +65132,14 @@ var app = (function () {
     		block,
     		id: create_catch_block$2.name,
     		type: "catch",
-    		source: "(19:0) {:catch}",
+    		source: "(28:0) {:catch}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (17:23) {:then _}
+    // (26:0) {:then _}
     function create_then_block$2(ctx) {
     	let t_value = /*userData*/ ctx[0].displayName + "";
     	let t;
@@ -65002,14 +65163,14 @@ var app = (function () {
     		block,
     		id: create_then_block$2.name,
     		type: "then",
-    		source: "(17:23) {:then _}",
+    		source: "(26:0) {:then _}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (17:15) awaiting{:then _}
+    // (23:15)         awaiting  {:then _}
     function create_pending_block$2(ctx) {
     	let t;
 
@@ -65030,7 +65191,7 @@ var app = (function () {
     		block,
     		id: create_pending_block$2.name,
     		type: "pending",
-    		source: "(17:15) awaiting{:then _}",
+    		source: "(23:15)         awaiting  {:then _}",
     		ctx
     	});
 
@@ -65038,8 +65199,10 @@ var app = (function () {
     }
 
     function create_fragment$r(ctx) {
+    	let p;
     	let promise;
     	let t0;
+    	let t1;
     	let button;
     	let mounted;
     	let dispose;
@@ -65059,21 +65222,27 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			p = element("p");
     			info.block.c();
-    			t0 = text("\r\n|\r\n");
+    			t0 = text("\r\n|");
+    			t1 = space();
     			button = element("button");
     			button.textContent = "LogOut";
-    			attr_dev(button, "class", "btn btn-outline-success my-2 my-sm-0");
-    			add_location(button, file$m, 22, 0, 512);
+    			attr_dev(p, "class", "my-auto mx-1");
+    			add_location(p, file$m, 21, 0, 487);
+    			attr_dev(button, "class", "nav-item mx-1 my-auto my-sm-0 svelte-19u3uo5");
+    			add_location(button, file$m, 32, 0, 640);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			info.block.m(target, info.anchor = anchor);
-    			info.mount = () => t0.parentNode;
+    			insert_dev(target, p, anchor);
+    			info.block.m(p, info.anchor = null);
+    			info.mount = () => p;
     			info.anchor = t0;
-    			insert_dev(target, t0, anchor);
+    			append_dev(p, t0);
+    			insert_dev(target, t1, anchor);
     			insert_dev(target, button, anchor);
 
     			if (!mounted) {
@@ -65093,10 +65262,11 @@ var app = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			info.block.d(detaching);
+    			if (detaching) detach_dev(p);
+    			info.block.d();
     			info.token = null;
     			info = null;
-    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(button);
     			mounted = false;
     			dispose();
@@ -65142,15 +65312,7 @@ var app = (function () {
     		if ("userData" in $$props) $$invalidate(0, userData = $$props.userData);
     	};
 
-    	$$self.$capture_state = () => ({
-    		firebase: firebase$1,
-    		Fb: firebase$1,
-    		db,
-    		user,
-    		auth,
-    		userData,
-    		syco
-    	});
+    	$$self.$capture_state = () => ({ firebase: firebase$1, db, user, auth, userData, syco });
 
     	$$self.$inject_state = $$props => {
     		if ("user" in $$props) $$invalidate(3, user = $$props.user);
@@ -65224,12 +65386,12 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (87:6) {#each navOptions as item, i (i)}
+    // (148:12) {#each navOptions as item, i (i)}
     function create_each_block$6(key_1, ctx) {
     	let button;
-    	let t_value = /*item*/ ctx[5].page + "";
-    	let t;
-    	let button_class_value;
+    	let t0_value = /*item*/ ctx[5].page + "";
+    	let t0;
+    	let t1;
     	let button_id_value;
     	let mounted;
     	let dispose;
@@ -65239,17 +65401,19 @@ var app = (function () {
     		first: null,
     		c: function create() {
     			button = element("button");
-    			t = text(t_value);
-    			attr_dev(button, "class", button_class_value = "" + (null_to_empty("nav-link bg-success kk") + " svelte-1rbz8nk"));
+    			t0 = text(t0_value);
+    			t1 = space();
+    			attr_dev(button, "class", "nav-item nav-link my-auto svelte-2tgofb");
     			attr_dev(button, "id", button_id_value = "" + /*i*/ ctx[7]);
     			attr_dev(button, "role", "tab");
     			toggle_class(button, "active", /*intSelectedPage*/ ctx[0] == /*i*/ ctx[7]);
-    			add_location(button, file$n, 87, 8, 2041);
+    			add_location(button, file$n, 148, 14, 3857);
     			this.first = button;
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
-    			append_dev(button, t);
+    			append_dev(button, t0);
+    			append_dev(button, t1);
 
     			if (!mounted) {
     				dispose = listen_dev(button, "click", /*click_handler*/ ctx[4], false, false, false);
@@ -65257,7 +65421,7 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*navOptions*/ 4 && t_value !== (t_value = /*item*/ ctx[5].page + "")) set_data_dev(t, t_value);
+    			if (dirty & /*navOptions*/ 4 && t0_value !== (t0_value = /*item*/ ctx[5].page + "")) set_data_dev(t0, t0_value);
 
     			if (dirty & /*navOptions*/ 4 && button_id_value !== (button_id_value = "" + /*i*/ ctx[7])) {
     				attr_dev(button, "id", button_id_value);
@@ -65278,14 +65442,14 @@ var app = (function () {
     		block,
     		id: create_each_block$6.name,
     		type: "each",
-    		source: "(87:6) {#each navOptions as item, i (i)}",
+    		source: "(148:12) {#each navOptions as item, i (i)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (99:8) {:else}
+    // (165:8) {:else}
     function create_else_block$8(ctx) {
     	let h5;
 
@@ -65293,8 +65457,8 @@ var app = (function () {
     		c: function create() {
     			h5 = element("h5");
     			h5.textContent = "not logged in";
-    			attr_dev(h5, "class", "m-1 svelte-1rbz8nk");
-    			add_location(h5, file$n, 99, 8, 2408);
+    			attr_dev(h5, "class", "");
+    			add_location(h5, file$n, 165, 10, 4359);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -65311,14 +65475,14 @@ var app = (function () {
     		block,
     		id: create_else_block$8.name,
     		type: "else",
-    		source: "(99:8) {:else}",
+    		source: "(165:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (97:6) {#if userAuth.user}
+    // (163:8) {#if userAuth.user}
     function create_if_block$i(ctx) {
     	let thisuser;
     	let current;
@@ -65364,7 +65528,7 @@ var app = (function () {
     		block,
     		id: create_if_block$i.name,
     		type: "if",
-    		source: "(97:6) {#if userAuth.user}",
+    		source: "(163:8) {#if userAuth.user}",
     		ctx
     	});
 
@@ -65372,38 +65536,28 @@ var app = (function () {
     }
 
     function create_fragment$s(ctx) {
-    	let link;
-    	let t0;
+    	let div3;
+    	let div2;
     	let nav;
     	let a;
-    	let t2;
-    	let button;
-    	let span;
-    	let t3;
-    	let div4;
+    	let t1;
+    	let div0;
     	let ul;
     	let each_blocks = [];
     	let each_1_lookup = new Map();
-    	let t4;
-    	let div3;
+    	let t2;
+    	let div1;
     	let current_block_type_index;
     	let if_block;
-    	let t5;
-    	let div0;
-    	let t6;
-    	let div1;
+    	let t3;
     	let img0;
     	let img0_src_value;
-    	let t7;
-    	let div2;
+    	let t4;
     	let img1;
     	let img1_src_value;
-    	let t8;
+    	let t5;
     	let img2;
     	let img2_src_value;
-    	let t9;
-    	let img3;
-    	let img3_src_value;
     	let current;
     	let each_value = /*navOptions*/ ctx[2];
     	validate_each_argument(each_value);
@@ -65429,116 +65583,79 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			link = element("link");
-    			t0 = space();
+    			div3 = element("div");
+    			div2 = element("div");
     			nav = element("nav");
     			a = element("a");
     			a.textContent = "Pos";
-    			t2 = space();
-    			button = element("button");
-    			span = element("span");
-    			t3 = space();
-    			div4 = element("div");
+    			t1 = space();
+    			div0 = element("div");
     			ul = element("ul");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t4 = space();
-    			div3 = element("div");
-    			if_block.c();
-    			t5 = space();
-    			div0 = element("div");
-    			t6 = space();
+    			t2 = space();
     			div1 = element("div");
+    			if_block.c();
+    			t3 = space();
     			img0 = element("img");
-    			t7 = space();
-    			div2 = element("div");
+    			t4 = space();
     			img1 = element("img");
-    			t8 = space();
+    			t5 = space();
     			img2 = element("img");
-    			t9 = space();
-    			img3 = element("img");
-    			attr_dev(link, "rel", "stylesheet");
-    			attr_dev(link, "href", "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
-    			add_location(link, file$n, 64, 0, 1311);
-    			attr_dev(a, "class", "navbar-brand");
-    			attr_dev(a, "href", "#");
-    			add_location(a, file$n, 71, 2, 1495);
-    			attr_dev(span, "class", "navbar-toggler-icon");
-    			add_location(span, file$n, 80, 4, 1778);
-    			attr_dev(button, "class", "navbar-toggler");
-    			attr_dev(button, "type", "button");
-    			attr_dev(button, "data-toggle", "collapse");
-    			attr_dev(button, "data-target", "#navbarSupportedContent");
-    			attr_dev(button, "aria-controls", "navbarSupportedContent");
-    			attr_dev(button, "aria-expanded", "false");
-    			attr_dev(button, "aria-label", "Toggle navigation");
-    			add_location(button, file$n, 72, 2, 1539);
-    			attr_dev(ul, "class", "navbar-nav mr-auto svelte-1rbz8nk");
-    			add_location(ul, file$n, 85, 4, 1959);
-    			attr_dev(div0, "class", "button button_close svelte-1rbz8nk");
-    			add_location(div0, file$n, 103, 6, 2469);
-    			attr_dev(img0, "class", "button-img-minimize m-1 svelte-1rbz8nk");
+    			attr_dev(a, "class", "text-sm font-bold leading-relaxed inline-block px-3  py-auto uppercase text-white");
+    			attr_dev(a, "href", "#pablo");
+    			add_location(a, file$n, 138, 15, 3433);
+    			attr_dev(ul, "class", "flex flex-col lg:flex-row list-none ml-auto my-auto lg:flex-grow flex");
+    			add_location(ul, file$n, 145, 10, 3699);
+    			attr_dev(div0, "class", "flex lg:flex-grow items-center");
+    			attr_dev(div0, "id", "example-navbar-info");
+    			add_location(div0, file$n, 144, 8, 3618);
+    			attr_dev(img0, "class", "button-img-minimize m-1 p-2");
     			if (img0.src !== (img0_src_value = "./png/titlebar/caption-buttons.svg#minimize")) attr_dev(img0, "src", img0_src_value);
-    			add_location(img0, file$n, 105, 8, 2559);
-    			attr_dev(div1, "class", "button button-minimize  svelte-1rbz8nk");
-    			add_location(div1, file$n, 104, 6, 2512);
-    			attr_dev(img1, "class", "button-img-maximize m-1 svelte-1rbz8nk");
+    			add_location(img0, file$n, 168, 8, 4417);
+    			attr_dev(img1, "class", "button-img-maximize m-1 p-2");
     			if (img1.src !== (img1_src_value = "./png/titlebar/caption-buttons.svg#maximize ")) attr_dev(img1, "src", img1_src_value);
-    			add_location(img1, file$n, 110, 8, 2746);
-    			attr_dev(img2, "class", "button-img-restore m-1 svelte-1rbz8nk");
-    			if (img2.src !== (img2_src_value = "./png/titlebar/caption-buttons.svg#restore")) attr_dev(img2, "src", img2_src_value);
-    			set_style(img2, "display", "none");
-    			add_location(img2, file$n, 113, 8, 2868);
-    			attr_dev(img3, "class", "button-img-close m-1 svelte-1rbz8nk");
-    			if (img3.src !== (img3_src_value = "./png/titlebar/caption-buttons.svg#close ")) attr_dev(img3, "src", img3_src_value);
-    			add_location(img3, file$n, 117, 8, 3021);
-    			attr_dev(div2, "class", "button button-maximize p-1 m-2 svelte-1rbz8nk");
-    			add_location(div2, file$n, 109, 6, 2692);
-    			attr_dev(div3, "class", "form-inline my-2 my-lg-0 svelte-1rbz8nk");
-    			add_location(div3, file$n, 95, 4, 2280);
-    			attr_dev(div4, "class", "collapse navbar-collapse drag svelte-1rbz8nk");
-    			attr_dev(div4, "id", "navbarSupportedContent");
-    			add_location(div4, file$n, 84, 2, 1882);
-    			attr_dev(nav, "class", "navbar navbar-expand-lg navbar-light bg-success svelte-1rbz8nk");
-    			add_location(nav, file$n, 70, 0, 1430);
+    			add_location(img1, file$n, 172, 8, 4544);
+    			attr_dev(img2, "class", "button-img-close m-1 p-2");
+    			if (img2.src !== (img2_src_value = "./png/titlebar/caption-buttons.svg#close ")) attr_dev(img2, "src", img2_src_value);
+    			add_location(img2, file$n, 176, 8, 4672);
+    			attr_dev(div1, "class", "flex flex-col lg:flex-row list-none ");
+    			add_location(div1, file$n, 161, 6, 4213);
+    			attr_dev(nav, "class", "relative flex  items-center justify-between px-0 py-2 navbar-expand-lg bg-green-500 rounded");
+    			add_location(nav, file$n, 136, 4, 3304);
+    			attr_dev(div2, "class", "w-full px-0");
+    			add_location(div2, file$n, 135, 2, 3273);
+    			attr_dev(div3, "class", " w-full flex  py-0");
+    			add_location(div3, file$n, 134, 0, 3237);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, link, anchor);
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, nav, anchor);
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, div2);
+    			append_dev(div2, nav);
     			append_dev(nav, a);
-    			append_dev(nav, t2);
-    			append_dev(nav, button);
-    			append_dev(button, span);
-    			append_dev(nav, t3);
-    			append_dev(nav, div4);
-    			append_dev(div4, ul);
+    			append_dev(nav, t1);
+    			append_dev(nav, div0);
+    			append_dev(div0, ul);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(ul, null);
     			}
 
-    			append_dev(div4, t4);
-    			append_dev(div4, div3);
-    			if_blocks[current_block_type_index].m(div3, null);
-    			append_dev(div3, t5);
-    			append_dev(div3, div0);
-    			append_dev(div3, t6);
-    			append_dev(div3, div1);
+    			append_dev(nav, t2);
+    			append_dev(nav, div1);
+    			if_blocks[current_block_type_index].m(div1, null);
+    			append_dev(div1, t3);
     			append_dev(div1, img0);
-    			append_dev(div3, t7);
-    			append_dev(div3, div2);
-    			append_dev(div2, img1);
-    			append_dev(div2, t8);
-    			append_dev(div2, img2);
-    			append_dev(div2, t9);
-    			append_dev(div2, img3);
+    			append_dev(div1, t4);
+    			append_dev(div1, img1);
+    			append_dev(div1, t5);
+    			append_dev(div1, img2);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -65572,7 +65689,7 @@ var app = (function () {
     				}
 
     				transition_in(if_block, 1);
-    				if_block.m(div3, t5);
+    				if_block.m(div1, t3);
     			}
     		},
     		i: function intro(local) {
@@ -65585,9 +65702,7 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(link);
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(nav);
+    			if (detaching) detach_dev(div3);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].d();
@@ -65780,51 +65895,51 @@ var app = (function () {
     			div3 = element("div");
     			a = element("a");
     			a.textContent = "Forgot Password?";
-    			attr_dev(h1, "class", "svelte-12wv2vi");
-    			add_location(h1, file$o, 311, 12, 7660);
-    			attr_dev(div0, "class", "fadeIn first svelte-12wv2vi");
-    			add_location(div0, file$o, 310, 8, 7620);
+    			attr_dev(h1, "class", "svelte-1wmuhtn");
+    			add_location(h1, file$o, 284, 12, 4925);
+    			attr_dev(div0, "class", "fadeIn first svelte-1wmuhtn");
+    			add_location(div0, file$o, 283, 8, 4885);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "id", "login");
-    			attr_dev(input0, "class", "fadeIn second svelte-12wv2vi");
+    			attr_dev(input0, "class", "fadeIn second svelte-1wmuhtn");
     			attr_dev(input0, "name", "login");
     			attr_dev(input0, "placeholder", "login");
-    			add_location(input0, file$o, 316, 12, 7750);
+    			add_location(input0, file$o, 289, 12, 5015);
     			attr_dev(input1, "type", "password");
     			attr_dev(input1, "id", "password");
-    			attr_dev(input1, "class", "fadeIn third svelte-12wv2vi");
+    			attr_dev(input1, "class", "fadeIn third svelte-1wmuhtn");
     			attr_dev(input1, "name", "login");
     			attr_dev(input1, "placeholder", "password");
-    			add_location(input1, file$o, 323, 12, 7975);
+    			add_location(input1, file$o, 296, 12, 5240);
     			attr_dev(input2, "type", "button");
-    			attr_dev(input2, "class", "fadeIn fourth svelte-12wv2vi");
+    			attr_dev(input2, "class", "fadeIn fourth svelte-1wmuhtn");
     			input2.value = "Log In";
-    			add_location(input2, file$o, 330, 12, 8209);
-    			attr_dev(div1, "class", "svelte-12wv2vi");
-    			add_location(div1, file$o, 315, 8, 7731);
-    			attr_dev(hr0, "class", "svelte-12wv2vi");
-    			add_location(hr0, file$o, 336, 8, 8380);
+    			add_location(input2, file$o, 303, 12, 5474);
+    			attr_dev(div1, "class", "svelte-1wmuhtn");
+    			add_location(div1, file$o, 288, 8, 4996);
+    			attr_dev(hr0, "class", "svelte-1wmuhtn");
+    			add_location(hr0, file$o, 309, 8, 5645);
     			attr_dev(input3, "type", "button");
-    			attr_dev(input3, "class", "fadeIn fourth svelte-12wv2vi");
+    			attr_dev(input3, "class", "fadeIn fourth svelte-1wmuhtn");
     			input3.value = "Login with google";
     			set_style(input3, "background", "#4285F4", 1);
-    			add_location(input3, file$o, 337, 8, 8396);
-    			attr_dev(hr1, "class", "svelte-12wv2vi");
-    			add_location(hr1, file$o, 343, 8, 8609);
+    			add_location(input3, file$o, 310, 8, 5661);
+    			attr_dev(hr1, "class", "svelte-1wmuhtn");
+    			add_location(hr1, file$o, 316, 8, 5874);
     			set_style(h4, "color", "red", 1);
-    			attr_dev(h4, "class", "svelte-12wv2vi");
-    			add_location(h4, file$o, 344, 8, 8625);
+    			attr_dev(h4, "class", "svelte-1wmuhtn");
+    			add_location(h4, file$o, 317, 8, 5890);
     			attr_dev(div2, "id", "formContent");
-    			attr_dev(div2, "class", "svelte-12wv2vi");
-    			add_location(div2, file$o, 306, 4, 7533);
-    			attr_dev(a, "class", "underlineHover svelte-12wv2vi");
+    			attr_dev(div2, "class", "svelte-1wmuhtn");
+    			add_location(div2, file$o, 279, 4, 4798);
+    			attr_dev(a, "class", "underlineHover svelte-1wmuhtn");
     			attr_dev(a, "href", "#");
-    			add_location(a, file$o, 348, 8, 8757);
+    			add_location(a, file$o, 321, 8, 6022);
     			attr_dev(div3, "id", "formFooter");
-    			attr_dev(div3, "class", "svelte-12wv2vi");
-    			add_location(div3, file$o, 347, 4, 8726);
-    			attr_dev(div4, "class", "wrapper fadeInDown svelte-12wv2vi");
-    			add_location(div4, file$o, 305, 0, 7495);
+    			attr_dev(div3, "class", "svelte-1wmuhtn");
+    			add_location(div3, file$o, 320, 4, 5991);
+    			attr_dev(div4, "class", "wrapper fadeInDown svelte-1wmuhtn");
+    			add_location(div4, file$o, 278, 0, 4760);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -66009,7 +66124,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "id", "electron-titlebar");
-    			add_location(div, file$p, 57, 0, 1339);
+    			add_location(div, file$p, 57, 0, 1308);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -66067,12 +66182,12 @@ var app = (function () {
 
     function get_each_context$7(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[20] = list[i];
-    	child_ctx[22] = i;
+    	child_ctx[19] = list[i];
+    	child_ctx[21] = i;
     	return child_ctx;
     }
 
-    // (116:4) <div slot="signed-out">
+    // (184034:4) <div slot="signed-out">
     function create_signed_out_slot(ctx) {
     	let div;
     	let navbar;
@@ -66087,15 +66202,15 @@ var app = (function () {
     				intSelectedPage: /*intSelectedPage*/ ctx[0],
     				changePage: /*changePage*/ ctx[5],
     				userAuth: {
-    					auth: /*auth*/ ctx[19],
-    					user: /*user*/ ctx[18]
+    					auth: /*auth*/ ctx[18],
+    					user: /*user*/ ctx[17]
     				}
     			},
     			$$inline: true
     		});
 
     	login = new Login({
-    			props: { auth: /*auth*/ ctx[19] },
+    			props: { auth: /*auth*/ ctx[18] },
     			$$inline: true
     		});
 
@@ -66106,9 +66221,9 @@ var app = (function () {
     			br = element("br");
     			t = space();
     			create_component(login.$$.fragment);
-    			add_location(br, file$q, 120, 34, 3739);
+    			add_location(br, file$q, 184038, 36, 4340090);
     			attr_dev(div, "slot", "signed-out");
-    			add_location(div, file$q, 115, 4, 3602);
+    			add_location(div, file$q, 184033, 4, 4339945);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -66122,14 +66237,14 @@ var app = (function () {
     			const navbar_changes = {};
     			if (dirty & /*intSelectedPage*/ 1) navbar_changes.intSelectedPage = /*intSelectedPage*/ ctx[0];
 
-    			if (dirty & /*auth, user*/ 786432) navbar_changes.userAuth = {
-    				auth: /*auth*/ ctx[19],
-    				user: /*user*/ ctx[18]
+    			if (dirty & /*auth, user*/ 393216) navbar_changes.userAuth = {
+    				auth: /*auth*/ ctx[18],
+    				user: /*user*/ ctx[17]
     			};
 
     			navbar.$set(navbar_changes);
     			const login_changes = {};
-    			if (dirty & /*auth*/ 524288) login_changes.auth = /*auth*/ ctx[19];
+    			if (dirty & /*auth*/ 262144) login_changes.auth = /*auth*/ ctx[18];
     			login.$set(login_changes);
     		},
     		i: function intro(local) {
@@ -66154,14 +66269,14 @@ var app = (function () {
     		block,
     		id: create_signed_out_slot.name,
     		type: "slot",
-    		source: "(116:4) <div slot=\\\"signed-out\\\">",
+    		source: "(184034:4) <div slot=\\\"signed-out\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (139:14) {#each navOptions as page, i}
+    // (184057:14) {#each navOptions as page, i}
     function create_each_block$7(ctx) {
     	let div;
     	let switch_instance;
@@ -66173,22 +66288,22 @@ var app = (function () {
     	let current;
 
     	function switch_instance_basketItems_binding(value) {
-    		/*switch_instance_basketItems_binding*/ ctx[10].call(null, value);
+    		/*switch_instance_basketItems_binding*/ ctx[8].call(null, value);
     	}
 
     	function switch_instance_totalCost_binding(value) {
-    		/*switch_instance_totalCost_binding*/ ctx[11].call(null, value);
+    		/*switch_instance_totalCost_binding*/ ctx[9].call(null, value);
     	}
 
     	function switch_instance_takeback_binding(value) {
-    		/*switch_instance_takeback_binding*/ ctx[12].call(null, value);
+    		/*switch_instance_takeback_binding*/ ctx[10].call(null, value);
     	}
 
     	function switch_instance_etems_binding(value) {
-    		/*switch_instance_etems_binding*/ ctx[13].call(null, value);
+    		/*switch_instance_etems_binding*/ ctx[11].call(null, value);
     	}
 
-    	var switch_value = /*page*/ ctx[20].component;
+    	var switch_value = /*page*/ ctx[19].component;
 
     	function switch_props(ctx) {
     		let switch_instance_props = { addToBasket: /*addToBasket*/ ctx[6] };
@@ -66228,9 +66343,9 @@ var app = (function () {
     			div = element("div");
     			if (switch_instance) create_component(switch_instance.$$.fragment);
     			t = space();
-    			attr_dev(div, "class", "p-2 invisible svelte-kyra1u");
-    			toggle_class(div, "invisible", /*i*/ ctx[22] != /*intSelectedPage*/ ctx[0]);
-    			add_location(div, file$q, 139, 16, 4242);
+    			attr_dev(div, "class", "p-2 invisible");
+    			toggle_class(div, "invisible", /*i*/ ctx[21] != /*intSelectedPage*/ ctx[0]);
+    			add_location(div, file$q, 184057, 16, 4340586);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -66269,7 +66384,7 @@ var app = (function () {
     				add_flush_callback(() => updating_etems = false);
     			}
 
-    			if (switch_value !== (switch_value = /*page*/ ctx[20].component)) {
+    			if (switch_value !== (switch_value = /*page*/ ctx[19].component)) {
     				if (switch_instance) {
     					group_outros();
     					const old_component = switch_instance;
@@ -66298,7 +66413,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*intSelectedPage*/ 1) {
-    				toggle_class(div, "invisible", /*i*/ ctx[22] != /*intSelectedPage*/ ctx[0]);
+    				toggle_class(div, "invisible", /*i*/ ctx[21] != /*intSelectedPage*/ ctx[0]);
     			}
     		},
     		i: function intro(local) {
@@ -66320,36 +66435,32 @@ var app = (function () {
     		block,
     		id: create_each_block$7.name,
     		type: "each",
-    		source: "(139:14) {#each navOptions as page, i}",
+    		source: "(184057:14) {#each navOptions as page, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (115:2) <User let:user let:auth>
+    // (184033:2) <User let:user let:auth>
     function create_default_slot_1$1(ctx) {
     	let t0;
-    	let main;
     	let navbar;
     	let br;
     	let t1;
+    	let div4;
     	let div3;
-    	let basketitemviewer;
-    	let updating_basketItems;
-    	let updating_totalCost;
-    	let t2;
     	let div2;
     	let div1;
     	let div0;
-    	let t3;
-    	let div4;
+    	let t2;
+    	let div5;
     	let h1;
-    	let t4;
+    	let t3;
     	let pre;
-    	let t5;
+    	let t4;
     	let button0;
-    	let t7;
+    	let t6;
     	let button1;
     	let current;
     	let mounted;
@@ -66361,38 +66472,13 @@ var app = (function () {
     				intSelectedPage: /*intSelectedPage*/ ctx[0],
     				changePage: /*changePage*/ ctx[5],
     				userAuth: {
-    					auth: /*auth*/ ctx[19],
-    					user: /*user*/ ctx[18]
+    					auth: /*auth*/ ctx[18],
+    					user: /*user*/ ctx[17]
     				}
     			},
     			$$inline: true
     		});
 
-    	function basketitemviewer_basketItems_binding(value) {
-    		/*basketitemviewer_basketItems_binding*/ ctx[8].call(null, value);
-    	}
-
-    	function basketitemviewer_totalCost_binding(value) {
-    		/*basketitemviewer_totalCost_binding*/ ctx[9].call(null, value);
-    	}
-
-    	let basketitemviewer_props = { takeback: /*takeback*/ ctx[4] };
-
-    	if (/*basketItems*/ ctx[1] !== void 0) {
-    		basketitemviewer_props.basketItems = /*basketItems*/ ctx[1];
-    	}
-
-    	if (/*totalCost*/ ctx[2] !== void 0) {
-    		basketitemviewer_props.totalCost = /*totalCost*/ ctx[2];
-    	}
-
-    	basketitemviewer = new BasketItemViewer({
-    			props: basketitemviewer_props,
-    			$$inline: true
-    		});
-
-    	binding_callbacks.push(() => bind(basketitemviewer, "basketItems", basketitemviewer_basketItems_binding));
-    	binding_callbacks.push(() => bind(basketitemviewer, "totalCost", basketitemviewer_totalCost_binding));
     	let each_value = navOptions;
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -66413,13 +66499,11 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			t0 = space();
-    			main = element("main");
     			create_component(navbar.$$.fragment);
     			br = element("br");
     			t1 = space();
+    			div4 = element("div");
     			div3 = element("div");
-    			create_component(basketitemviewer.$$.fragment);
-    			t2 = space();
     			div2 = element("div");
     			div1 = element("div");
     			div0 = element("div");
@@ -66428,46 +66512,44 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			t3 = space();
-    			div4 = element("div");
+    			t2 = space();
+    			div5 = element("div");
     			h1 = element("h1");
-    			t4 = text("Total Cost:\n        ");
+    			t3 = text("Total Cost:\n        ");
     			create_component(pre.$$.fragment);
-    			t5 = space();
+    			t4 = space();
     			button0 = element("button");
     			button0.textContent = "sell";
-    			t7 = space();
+    			t6 = space();
     			button1 = element("button");
     			button1.textContent = "add to costumer";
-    			add_location(br, file$q, 131, 36, 3964);
+    			add_location(br, file$q, 184048, 34, 4340273);
     			attr_dev(div0, "class", "col-sm-12");
-    			add_location(div0, file$q, 137, 12, 4158);
+    			add_location(div0, file$q, 184055, 12, 4340502);
     			attr_dev(div1, "class", "row");
-    			add_location(div1, file$q, 136, 10, 4128);
-    			attr_dev(div2, "class", "page-content container ksi svelte-kyra1u");
-    			add_location(div2, file$q, 135, 8, 4077);
-    			attr_dev(div3, "class", "page svelte-kyra1u");
-    			add_location(div3, file$q, 132, 6, 3977);
-    			attr_dev(main, "class", "globalCenter svelte-kyra1u");
-    			add_location(main, file$q, 126, 4, 3818);
+    			add_location(div1, file$q, 184054, 10, 4340472);
+    			attr_dev(div2, "class", "");
+    			add_location(div2, file$q, 184053, 8, 4340447);
+    			attr_dev(div3, "class", "w-full px-4");
+    			add_location(div3, file$q, 184050, 6, 4340324);
+    			attr_dev(div4, "class", "flex flex-wrap py-2");
+    			add_location(div4, file$q, 184049, 4, 4340284);
     			attr_dev(h1, "class", "col-5");
-    			add_location(h1, file$q, 160, 6, 4870);
+    			add_location(h1, file$q, 184078, 6, 4341213);
     			attr_dev(button0, "class", "col bg-success ");
-    			add_location(button0, file$q, 164, 6, 4961);
+    			add_location(button0, file$q, 184082, 6, 4341304);
     			attr_dev(button1, "class", "col bg-primary ");
-    			add_location(button1, file$q, 167, 6, 5064);
-    			attr_dev(div4, "class", "fixed-bottom row fbmenu bg-success svelte-kyra1u");
-    			add_location(div4, file$q, 159, 4, 4815);
+    			add_location(button1, file$q, 184085, 6, 4341407);
+    			attr_dev(div5, "class", "fixed-bottom row fbmenu bg-success");
+    			add_location(div5, file$q, 184077, 4, 4341158);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
-    			insert_dev(target, main, anchor);
-    			mount_component(navbar, main, null);
-    			append_dev(main, br);
-    			append_dev(main, t1);
-    			append_dev(main, div3);
-    			mount_component(basketitemviewer, div3, null);
-    			append_dev(div3, t2);
+    			mount_component(navbar, target, anchor);
+    			insert_dev(target, br, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
     			append_dev(div3, div2);
     			append_dev(div2, div1);
     			append_dev(div1, div0);
@@ -66476,15 +66558,15 @@ var app = (function () {
     				each_blocks[i].m(div0, null);
     			}
 
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, div4, anchor);
-    			append_dev(div4, h1);
-    			append_dev(h1, t4);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, h1);
+    			append_dev(h1, t3);
     			mount_component(pre, h1, null);
-    			append_dev(div4, t5);
-    			append_dev(div4, button0);
-    			append_dev(div4, t7);
-    			append_dev(div4, button1);
+    			append_dev(div5, t4);
+    			append_dev(div5, button0);
+    			append_dev(div5, t6);
+    			append_dev(div5, button1);
     			current = true;
 
     			if (!mounted) {
@@ -66496,28 +66578,12 @@ var app = (function () {
     			const navbar_changes = {};
     			if (dirty & /*intSelectedPage*/ 1) navbar_changes.intSelectedPage = /*intSelectedPage*/ ctx[0];
 
-    			if (dirty & /*auth, user*/ 786432) navbar_changes.userAuth = {
-    				auth: /*auth*/ ctx[19],
-    				user: /*user*/ ctx[18]
+    			if (dirty & /*auth, user*/ 393216) navbar_changes.userAuth = {
+    				auth: /*auth*/ ctx[18],
+    				user: /*user*/ ctx[17]
     			};
 
     			navbar.$set(navbar_changes);
-    			const basketitemviewer_changes = {};
-    			if (dirty & /*takeback*/ 16) basketitemviewer_changes.takeback = /*takeback*/ ctx[4];
-
-    			if (!updating_basketItems && dirty & /*basketItems*/ 2) {
-    				updating_basketItems = true;
-    				basketitemviewer_changes.basketItems = /*basketItems*/ ctx[1];
-    				add_flush_callback(() => updating_basketItems = false);
-    			}
-
-    			if (!updating_totalCost && dirty & /*totalCost*/ 4) {
-    				updating_totalCost = true;
-    				basketitemviewer_changes.totalCost = /*totalCost*/ ctx[2];
-    				add_flush_callback(() => updating_totalCost = false);
-    			}
-
-    			basketitemviewer.$set(basketitemviewer_changes);
 
     			if (dirty & /*intSelectedPage, navOptions, addToBasket, basketItems, totalCost, takeback, etems*/ 95) {
     				each_value = navOptions;
@@ -66554,7 +66620,6 @@ var app = (function () {
     		i: function intro(local) {
     			if (current) return;
     			transition_in(navbar.$$.fragment, local);
-    			transition_in(basketitemviewer.$$.fragment, local);
 
     			for (let i = 0; i < each_value.length; i += 1) {
     				transition_in(each_blocks[i]);
@@ -66565,7 +66630,6 @@ var app = (function () {
     		},
     		o: function outro(local) {
     			transition_out(navbar.$$.fragment, local);
-    			transition_out(basketitemviewer.$$.fragment, local);
     			each_blocks = each_blocks.filter(Boolean);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -66577,12 +66641,13 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(main);
-    			destroy_component(navbar);
-    			destroy_component(basketitemviewer);
-    			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(t3);
+    			destroy_component(navbar, detaching);
+    			if (detaching) detach_dev(br);
+    			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(div4);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(div5);
     			destroy_component(pre);
     			mounted = false;
     			dispose();
@@ -66593,14 +66658,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(115:2) <User let:user let:auth>",
+    		source: "(184033:2) <User let:user let:auth>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (114:0) <FirebaseApp firebase={Fb}>
+    // (184032:0) <FirebaseApp firebase={Fb}>
     function create_default_slot$4(ctx) {
     	let user;
     	let current;
@@ -66610,13 +66675,13 @@ var app = (function () {
     				$$slots: {
     					default: [
     						create_default_slot_1$1,
-    						({ user, auth }) => ({ 18: user, 19: auth }),
-    						({ user, auth }) => (user ? 262144 : 0) | (auth ? 524288 : 0)
+    						({ user, auth }) => ({ 17: user, 18: auth }),
+    						({ user, auth }) => (user ? 131072 : 0) | (auth ? 262144 : 0)
     					],
     					"signed-out": [
     						create_signed_out_slot,
-    						({ user, auth }) => ({ 18: user, 19: auth }),
-    						({ user, auth }) => (user ? 262144 : 0) | (auth ? 524288 : 0)
+    						({ user, auth }) => ({ 17: user, 18: auth }),
+    						({ user, auth }) => (user ? 131072 : 0) | (auth ? 262144 : 0)
     					]
     				},
     				$$scope: { ctx }
@@ -66635,7 +66700,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const user_changes = {};
 
-    			if (dirty & /*$$scope, totalCost, intSelectedPage, basketItems, takeback, etems, auth, user*/ 9175071) {
+    			if (dirty & /*$$scope, totalCost, intSelectedPage, basketItems, takeback, etems, auth, user*/ 4587551) {
     				user_changes.$$scope = { dirty, ctx };
     			}
 
@@ -66659,7 +66724,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$4.name,
     		type: "slot",
-    		source: "(114:0) <FirebaseApp firebase={Fb}>",
+    		source: "(184032:0) <FirebaseApp firebase={Fb}>",
     		ctx
     	});
 
@@ -66700,7 +66765,7 @@ var app = (function () {
     		p: function update(ctx, [dirty]) {
     			const firebaseapp_changes = {};
 
-    			if (dirty & /*$$scope, totalCost, intSelectedPage, basketItems, takeback, etems*/ 8388639) {
+    			if (dirty & /*$$scope, totalCost, intSelectedPage, basketItems, takeback, etems*/ 4194335) {
     				firebaseapp_changes.$$scope = { dirty, ctx };
     			}
 
@@ -66739,6 +66804,46 @@ var app = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
 
+    	var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+    		function adopt(value) {
+    			return value instanceof P
+    			? value
+    			: new P(function (resolve) {
+    						resolve(value);
+    					});
+    		}
+
+    		return new (P || (P = Promise))(function (resolve, reject) {
+    				function fulfilled(value) {
+    					try {
+    						step(generator.next(value));
+    					} catch(e) {
+    						reject(e);
+    					}
+    				}
+
+    				function rejected(value) {
+    					try {
+    						step(generator["throw"](value));
+    					} catch(e) {
+    						reject(e);
+    					}
+    				}
+
+    				function step(result) {
+    					result.done
+    					? resolve(result.value)
+    					: adopt(result.value).then(fulfilled, rejected);
+    				}
+
+    				step((generator = generator.apply(thisArg, _arguments || [])).next());
+    			});
+    	};
+
+    	// Your web app's Firebase configuration
+    	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    	// Initialize Firebase
+    	// @ts-ignore
     	firebase$1.initializeApp({
     		"apiKey": "AIzaSyA_RYWk5gBsMv39gKgdPZ9tMWXNAiBPYqE",
     		"authDomain": "shopmanager-simple.firebaseapp.com",
@@ -66746,8 +66851,8 @@ var app = (function () {
     		"projectId": "shopmanager-simple",
     		"storageBucket": "shopmanager-simple.appspot.com",
     		"messagingSenderId": "43525065310",
-    		"appId": "1:43525065310:web:ad5af5634809ed226d02cf",
-    		"measurementId": "G-WBYJYLM83P"
+    		"appId": "1:43525065310:web:93cad72c98682fb26d02cf",
+    		"measurementId": "G-N4M7CW8KSG"
     	});
 
     	firebase$1.analytics();
@@ -66786,34 +66891,35 @@ var app = (function () {
     		} else return false;
     	}
 
-    	async function sellAllItemsInTheBasket() {
-    		// get all items
-    		//@ts-ignore
-    		let items = await getMultiItemsById(db, basketItems.map(a => a.id));
+    	function sellAllItemsInTheBasket() {
+    		return __awaiter(this, void 0, void 0, function* () {
+    			// get all items
+    			//@ts-ignore
+    			let items = yield getMultiItemsById(db, basketItems.map(a => a.id));
 
-    		// push all items in the sold items
-    		for (let i = 0; i < items.length; i++) {
-    			let item = items[i];
-    			let storageItem = basketItems[i];
-    			let soldRef = fsdb.doc("sold/");
-    			let k = await soldRef.get();
-    			let kId = getUnicId(k.data());
+    			// push all items in the sold items
+    			for (let i = 0; i < items.length; i++) {
+    				let item = items[i];
+    				let storageItem = basketItems[i];
+    				let soldRef = fsdb.doc("sold/");
+    				let k = yield soldRef.get();
+    				let kId = getUnicId(k.data());
 
-    			fsdb.doc(`sold/${kId}`).set({
-    				worker: "default",
-    				date: new Date(),
-    				category: item.category,
-    				storageItem
-    			});
-    		} // push id of the sold item to the buyer
-    		//@ts-ignore
-    	} // let b = db.ref(`buyer/${}/`).push();
-    	// let bId = k.key;
-
-    	// k.set({
-    	//   worker: "default",
-    	//   date: new Date(),
+    				fsdb.doc(`sold/${kId}`).set({
+    					worker: "default",
+    					date: new Date(),
+    					category: item.category,
+    					storageItem
+    				});
+    			} // push id of the sold item to the buyer
+    			//@ts-ignore
+    		}); // let b = db.ref(`buyer/${}/`).push();
+    		// let bId = k.key;
+    		// k.set({
+    		//   worker: "default",
+    	} //   date: new Date(),
     	//   category: item.category,
+
     	//   color: item.color,
     	//   storage,
     	// });
@@ -66824,16 +66930,6 @@ var app = (function () {
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
     	});
-
-    	function basketitemviewer_basketItems_binding(value) {
-    		basketItems = value;
-    		$$invalidate(1, basketItems);
-    	}
-
-    	function basketitemviewer_totalCost_binding(value) {
-    		totalCost = value;
-    		$$invalidate(2, totalCost);
-    	}
 
     	function switch_instance_basketItems_binding(value) {
     		basketItems = value;
@@ -66856,6 +66952,7 @@ var app = (function () {
     	}
 
     	$$self.$capture_state = () => ({
+    		__awaiter,
     		firebase: firebase$1,
     		Fb: firebase$1,
     		FirebaseApp,
@@ -66885,6 +66982,7 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
+    		if ("__awaiter" in $$props) __awaiter = $$props.__awaiter;
     		if ("ph" in $$props) ph = $$props.ph;
     		if ("selectedPage" in $$props) selectedPage = $$props.selectedPage;
     		if ("intSelectedPage" in $$props) $$invalidate(0, intSelectedPage = $$props.intSelectedPage);
@@ -66907,8 +67005,6 @@ var app = (function () {
     		changePage,
     		addToBasket,
     		sellAllItemsInTheBasket,
-    		basketitemviewer_basketItems_binding,
-    		basketitemviewer_totalCost_binding,
     		switch_instance_basketItems_binding,
     		switch_instance_totalCost_binding,
     		switch_instance_takeback_binding,

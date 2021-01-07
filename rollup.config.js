@@ -45,6 +45,7 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
+		require('@tailwindcss/ui'),
 		json({
 			compact: true
 		}),
@@ -55,7 +56,17 @@ export default {
 
 		}),
 		svelte({
-			preprocess: sveltePreprocess(),
+			preprocess: sveltePreprocess({
+				// https://github.com/kaisermann/svelte-preprocess/#user-content-options
+				sourceMap: !production,
+				postcss: {
+					plugins: [
+						require("tailwindcss"),
+						require("autoprefixer"),
+						require("postcss-nesting")
+					],
+				},
+			}),
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production

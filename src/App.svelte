@@ -99,7 +99,13 @@
   let takeback: any;
 </script>
 
-<style>
+<style global lang="postcss">
+  @tailwind base;
+  @tailwind components;
+  /* purgecss end ignore */
+
+  @tailwind utilities;
+
   .page {
     display: table;
     width: 100%;
@@ -134,25 +140,25 @@
   <User let:user let:auth>
     <div slot="signed-out">
       <NavBar
-      navOptions={[]}
-      {intSelectedPage}
-      {changePage}
-      userAuth={{ auth, user }} /><br />
+        navOptions={[]}
+        {intSelectedPage}
+        {changePage}
+        userAuth={{ auth, user }} /><br />
       <Login {auth} />
     </div>
 
     <!-- Start User Default -->
 
-    <main class="globalCenter">
-      <NavBar
-        {navOptions}
-        {intSelectedPage}
-        {changePage}
-        userAuth={{ auth, user }} /><br />
-      <div class="page">
-        <BasketItemViewer bind:basketItems bind:totalCost {takeback} />
-
-        <div class="page-content container ksi">
+    <NavBar
+      {navOptions}
+      {intSelectedPage}
+      {changePage}
+      userAuth={{ auth, user }} /><br />
+    <div class="flex flex-wrap py-2">
+      <div class="w-full px-4">
+        <!-- <BasketItemViewer bind:basketItems bind:totalCost {takeback} /> -->
+       
+        <div class="">
           <div class="row">
             <div class="col-sm-12">
               {#each navOptions as page, i}
@@ -173,7 +179,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
     <!-- total cost -->
     <div class="fixed-bottom row fbmenu bg-success">

@@ -7,7 +7,7 @@
     "node_modules/*",
     "__sapper__/*",
     "public/*",
-    "App/*"
+    "app/*"
   ],
   "compilerOptions": {
     "target": "es6",
