@@ -1,0 +1,80 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add firebase
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\haith\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\haith\AppData\Local\Programs\Python\Python39\;C:\Users\haith\.cargo\bin;C:\Users\haith\AppData\Local\Microsoft\WindowsApps;C:\Users\haith\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\haith\AppData\Roaming\npm;C:\Users\haith\AppData\Local\Yarn\bin;C:\Users\haith\AppData\Roaming\npm\node_modules;C:\Users\haith\.deno\bin;C:\Users\haith\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.15.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOSPC: no space left on device, write
+
+npm manifest: 
+  {
+    "name": "svelte-app",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "rollup -c",
+      "dev": "rollup -c -w",
+      "start": "sirv public",
+      "validate": "svelte-check",
+      "app": "cd app && tsc && electron ./dist/main.js",
+      "apw": "cd app && tsc --watch"
+    },
+    "devDependencies": {
+      "@rollup/plugin-commonjs": "^16.0.0",
+      "@rollup/plugin-json": "^4.1.0",
+      "@rollup/plugin-node-resolve": "^10.0.0",
+      "@rollup/plugin-replace": "^2.3.4",
+      "@rollup/plugin-typescript": "^6.0.0",
+      "@tsconfig/svelte": "^1.0.0",
+      "@types/express": "^4.17.9",
+      "autoprefixer": "^10.1.0",
+      "electron": "^11.0.4",
+      "postcss-nesting": "^7.0.1",
+      "rollup": "^2.35.1",
+      "rollup-plugin-css-only": "^3.0.0",
+      "rollup-plugin-livereload": "^2.0.0",
+      "rollup-plugin-svelte": "^7.0.0",
+      "rollup-plugin-terser": "^7.0.0",
+      "sv-bootstrap-dropdown": "^0.4.4",
+      "svelte": "*",
+      "svelte-check": "*",
+      "svelte-preprocess": "^4.6.1",
+      "tailwindcss": "^2.0.2",
+      "tslib": "*",
+      "typescript": "*"
+    },
+    "dependencies": {
+      "@tailwindcss/ui": "^0.7.2",
+      "bootstrap": "^4.5.3",
+      "custom-electron-titlebar": "^3.2.5",
+      "dotenv": "^6.2.0",
+      "electron-reload": "^1.5.0",
+      "electron-titlebar": "^0.0.3",
+      "express": "^4.17.1",
+      "firebase": "^8.1.2",
+      "firebase-tools": "^9.1.0",
+      "framework7-svelte": "^5.7.14",
+      "jquery": "^3.5.1",
+      "opn": "^6.0.0",
+      "param-handler": "^1.0.6",
+      "popper.js": "^1.16.1",
+      "sirv-cli": "^1.0.0",
+      "sv-bootstrap-modal": "^1.0.3",
+      "sveltefire": "^0.1.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,19 +1,20 @@
 import { app, BrowserWindow } from 'electron'
 
-import * as Path from "path"
+import { join } from "path"
 
 
 
-let loadingPage = Path.join(__dirname, "./../../public/loading.html")
-let mainPage = Path.join(__dirname, "./../../public/index.html")
-let testPage = Path.join(__dirname, "./../index.html")
+let loadingPage = join(__dirname, "./../../public/loading.html")
+let mainPage = join(__dirname, "./../../public/index.html")
+let testPage = join(__dirname, "./../index.html")
 
-import * as ex from 'express'
-const express = ex.default()
-let win
+import express = require('express')
+const exapp = express()
+
+let win;
+
+
 const port = 12345
-
-
 
 function createAwaitingWindow(): BrowserWindow {
   const _awin = new BrowserWindow({
@@ -44,12 +45,12 @@ function createWindow(): BrowserWindow {
     height: 800,
     minWidth: 800,
     minHeight: 600,
-    icon: Path.join(__dirname, './../../public/png/favicon.png'),
+    icon: join(__dirname, './../../public/png/favicon.png'),
     frame: false,
     show: false,
     titleBarStyle: "hidden",
     webPreferences: {
-      preload: Path.join(__dirname, './preload.js'),
+      preload: join(__dirname, './preload.js'),
       nodeIntegration: true,
       enableRemoteModule: true,
       nativeWindowOpen: true,
@@ -60,14 +61,15 @@ function createWindow(): BrowserWindow {
 
   return _win
 }
+
+
 console.log("its updating")
 
 const production = !process.env.ELECTRON_RELOAD;
 
 if (!production) {
-  const path = require('path');
   require('electron-reload')(__dirname, {
-    electron: path.join(__dirname, 'node_modules', '.bin', 'electron'),
+    electron: join(__dirname, 'node_modules', '.bin', 'electron'),
     awaitWriteFinish: true,
   });
 }
@@ -87,7 +89,7 @@ app.on('activate', () => {
 
 
 
-app.getFileIcon(Path.join(__dirname, './../public/png/favicon.png'))
+app.getFileIcon(join(__dirname, './../public/png/favicon.png'))
 
 
 let main: BrowserWindow;
@@ -101,13 +103,13 @@ app.on('ready', () => {
     main = createWindow()
 
 
-    express.get('/', (_, res) => res.sendFile(mainPage))
+    exapp.get('/', (_, res) => res.sendFile(mainPage))
     //@ts-ignore
-    express.use(ex.static(Path.join(__dirname, './../../public/')))
-    express.listen(port, () => console.log('Running on ' + port))
+    exapp.use(ex.static(join(__dirname, './../../public/')))
+    exapp.listen(port, () => console.log('Running on ' + port))
 
-    express.get('/renderer.js', (_, res) => {
-      res.sendFile(Path.join(__dirname, `./renderer.js`))
+    exapp.get('/renderer.js', (_, res) => {
+      res.sendFile(join(__dirname, `./renderer.js`))
     })
 
 

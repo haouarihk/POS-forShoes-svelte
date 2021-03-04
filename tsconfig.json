@@ -10,7 +10,7 @@
     "app/*"
   ],
   "compilerOptions": {
-    "target": "es6",
+    "target": "ES2020",
     "strict": true,
     "esModuleInterop": true
   }

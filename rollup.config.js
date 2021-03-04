@@ -52,8 +52,6 @@ export default {
 
 		replace({
 			fbConfig: JSON.stringify(require("./firebaseConfig.json"))
-
-
 		}),
 		svelte({
 			preprocess: sveltePreprocess({
