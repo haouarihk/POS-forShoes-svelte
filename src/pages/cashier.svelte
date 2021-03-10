@@ -1,7 +1,8 @@
 <script lang="ts">
     import type { BasketItemd } from "../../d/types";
     import BarCodeReader from "../components/barcoder/barCodeReader.svelte";
-    import Lister from "../components/creation/lister.svelte";
+    import Client from "../components/builder/client.svelte";
+    import Lister from "../components/builder/components/lister.svelte";
 
     export let basketItems: BasketItemd[];
     export let arrayitems: any[] = [];
@@ -13,13 +14,6 @@
     export let takeItem: any;
 </script>
 
-<style>
-    .main {
-        display: absolute;
-        height: 78vh;
-    }
-</style>
-
 <main class="main">
     <div class="row">
         <h3 class="col-6">Add item by Barcode:</h3>
@@ -29,9 +23,17 @@
     <div class="row">
         <h3 class="col-6">select Costumer:</h3>
         <Lister
+            component={Client}
             Class="col-6"
-            interdatatype="buyers"
-            title="buyers"
-            dir="buyers" />
+            title="clients"
+            dir="clients"
+        />
     </div>
 </main>
+
+<style>
+    .main {
+        display: absolute;
+        height: 78vh;
+    }
+</style>

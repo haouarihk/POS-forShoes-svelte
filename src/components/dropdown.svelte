@@ -1,18 +1,5 @@
 <script lang="ts">
-  import { fade, scale, slide } from "svelte/transition";
-  export let Class: string = "";
-  export let Style: string = "";
-  export let items: string[] = [];
-  export let title: string = "dropdown";
-
-  export let selective: boolean = true;
-  export let addedable: boolean = false;
-
-  export let cap: Function = () => {};
-
-  export let cb: Function = () => {};
-
-  export let value: number = -1;
+  import { scale, slide } from "svelte/transition";
   let normalTitle = title;
   let viewdItems: string[] = [];
   let toggler = false;
@@ -40,14 +27,14 @@
     cb(ttl, index);
   }
 
-  function init(e:any) {
+  function init(e: any) {
     e.focus();
     e.select();
     e.setSelectionRange(0, e.value.length);
     search = "";
   }
 
-  function onsearch(e:any) {
+  function onsearch(e: any) {
     if (e.keyCode == 13) changetitle(viewdItems[0], viewdItems.length == 0);
   }
 
@@ -55,7 +42,80 @@
     if (items[0]) viewdItems = items.filter((a) => a.indexOf(search) != -1);
     if (search == "") title = normalTitle;
   }
+
+  export var Class: string = "";
+  export var Style: string = "";
+  export var items: string[] = [];
+  export var title: string = "dropdown";
+  export var selective: boolean = true;
+  export var addedable: boolean = false;
+  export var cap: Function = () => {};
+  export var cb: (displayName: string, index: number) => void = () => {};
+  export var value: number = -1;
 </script>
+
+<div class="brr {Class}" style={Style}>
+  {#if !toggler}
+    <button
+      type="button"
+      class="btn btn-secondary  col-12"
+      on:click={() => (toggler = true)}
+    >
+      {title}<span>↵</span>
+    </button>
+  {:else}
+    <input
+      type="text"
+      class="btn btn-secondary col-12"
+      bind:value={search}
+      on:keypress={onsearch}
+      on:blur={() =>
+        setTimeout(() => {
+          toggler = false;
+          changetitle(search, false);
+        }, 200)}
+      use:init
+    />
+  {/if}
+  {#if toggler}
+    <div class="ddm2 dropdown-content" transition:scale={{ duration: 200 }}>
+      {#each viewdItems as _i, i}
+        <button
+          transition:slide|local
+          class={"darkTheme border border-primary " + selective
+            ? "dropdown-item "
+            : ""}
+          type="button"
+          on:click={() => {
+            cap(_i, i);
+            search = _i;
+            changetitle(_i, false);
+            toggler = false;
+          }}>{_i}</button
+        >
+      {/each}
+      {#if addedable}
+        <button
+          class={"darkTheme  dropdown-item s"}
+          type="button"
+          on:click={() => {
+            changetitle(search, true, -1);
+            toggler = false;
+          }}>New (+)</button
+        >
+      {/if}
+      {#if selective}
+        <button
+          class={"darkTheme bg-danger  dropdown-item "}
+          type="button"
+          on:click={() => {
+            changetitle("", false, -2);
+          }}>Cancel (X)</button
+        >
+      {/if}
+    </div>
+  {/if}
+</div>
 
 <style>
   .dropdown-content {
@@ -73,58 +133,3 @@
     margin-bottom: 1em;
   }
 </style>
-
-<div class="brr {Class}" style={Style}>
-  {#if !toggler}
-    <button
-      type="button"
-      class="btn btn-secondary  col-12"
-      on:click={() => (toggler = true)}>
-      {title}<span>↵</span>
-    </button>
-  {:else}
-    <input
-      type="text"
-      class="btn btn-secondary col-12"
-      bind:value={search}
-      on:keypress={onsearch}
-      on:blur={() => setTimeout(() => {
-          toggler = false;
-          changetitle(search, false);
-        }, 200)}
-      use:init />
-  {/if}
-  {#if toggler}
-    <div class="ddm2 dropdown-content" transition:scale={{ duration: 200 }}>
-      {#each viewdItems as _i, i}
-        <button
-          transition:slide|local
-          class={'darkTheme border border-primary ' + selective ? 'dropdown-item ' : ''}
-          type="button"
-          on:click={() => {
-            cap(_i, i);
-            search = _i;
-            changetitle(_i, false);
-            toggler = false;
-          }}>{_i}</button>
-      {/each}
-      {#if addedable}
-        <button
-          class={'darkTheme  dropdown-item s'}
-          type="button"
-          on:click={() => {
-            changetitle(search, true, -1);
-            toggler = false;
-          }}>New (+)</button>
-      {/if}
-      {#if selective}
-        <button
-          class={'darkTheme bg-danger  dropdown-item '}
-          type="button"
-          on:click={() => {
-            changetitle('', false, -2);
-          }}>Cancel (X)</button>
-      {/if}
-    </div>
-  {/if}
-</div>

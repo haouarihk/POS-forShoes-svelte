@@ -1,5 +1,6 @@
 <script lang="ts">
     import fb from "firebase";
+    import { defaults } from "../utils/defaults";
     let db = fb.database();
     let fStorage = fb.storage();
     let fsdb = fb.firestore();
@@ -11,7 +12,7 @@
     export let Class: string = "";
     let dir: string = "items";
     export let addToBasket: Function;
-    export let item: ItemShop;
+    export let item: ItemShop | null = defaults.ItemShop;
 
     let value: string = "";
     function onchange(e: Event) {
@@ -24,8 +25,8 @@
             e.target.focus();
         }
     }
+
     async function getItem(id: string) {
-        //@ts-ignore
         return db.ref(`${dir}/${id}`).once("value", (snap) => {
             let val = snap.val();
 
@@ -43,7 +44,7 @@
     export let takeItem: any;
 </script>
 
-<input class={Class} bind:value on:keypress={(e) => onchange(e)} />
+<input class={Class} bind:value on:keypress={onchange} />
 {#if item}
-    <Item {...item} {addToBasket} {takeItem} />
+    <Item data={item} {addToBasket} {takeItem} />
 {/if}

@@ -122,8 +122,7 @@ app.on('ready', () => {
       await main.show()
       render()
     })
-    // long loading html
-    main.loadURL(`http://localhost:${port}`, { userAgent: 'Chrome' })//.loadURL(`https://localhost:${port}`)ma
+    main.loadURL(`http://localhost:${port}`, { userAgent: 'Chrome' })
 
   })
 
@@ -133,7 +132,7 @@ app.on('ready', () => {
 
 
 
-app.on('login', (event, webContents, details, authInfo, callback) => {
+app.on('login', (event, _webContents, _details, _authInfo, callback) => {
   event.preventDefault()
   callback('username', 'secret')
 })

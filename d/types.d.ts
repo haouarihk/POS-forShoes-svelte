@@ -11,15 +11,20 @@ export interface BasketItemd {
 }
 
 
+
+
+
+
 export interface ItemShop {
   id: string;
-  name: string;
-  photoURL: string;
+  displayName: string;
+  photoURL?: string;
   category: string;
   price: number;
   buyingPrice: number;
   seller: string;
   storage: Storage;
+  barcode?: string;
 }
 export interface itm {
   id: string;
@@ -110,3 +115,29 @@ export interface DataS {
   selectedSize: number;
 }
 
+
+
+export namespace NewItem {
+  export interface all {
+    displayName?: string;
+    discription?: string;
+    contact?: string;
+
+    photo?: any;
+
+    seller?: any;
+    category?: any;
+
+    buyingPrice?: number;
+    price?: number;
+
+    Storage?: any;
+    sizes?: any;
+
+    barcode?: any;
+  }
+  export interface category {
+    displayName: string;
+    discription: string;
+  }
+}
