@@ -1,23 +1,22 @@
 <script lang="ts">
-    import type { BasketItemd } from "../../d/types";
     import BarCodeReader from "../components/barcoder/barCodeReader.svelte";
     import Client from "../components/builder/client.svelte";
     import Lister from "../components/builder/components/lister.svelte";
 
-    export let basketItems: BasketItemd[];
-    export let arrayitems: any[] = [];
+    // export let basketItems: BasketItemd[];
+    // export let arrayitems: any[] = [];
 
     export let addToBasket: Function = () => {};
 
-    export let totalCost: number = 0;
+    // export let totalCost: number = 0;
 
-    export let takeItem: any;
+    export let removeItem: any;
 </script>
 
 <main class="main">
     <div class="row">
         <h3 class="col-6">Add item by Barcode:</h3>
-        <BarCodeReader Class="col-6" {addToBasket} {takeItem} />
+        <BarCodeReader Class="col-6" {addToBasket} {removeItem} />
     </div>
     <br />
     <div class="row">

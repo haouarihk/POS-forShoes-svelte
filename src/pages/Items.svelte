@@ -11,6 +11,7 @@
   import SearchBar from "../components/searchBar.svelte";
   // import NewItem from "../components/creation/newItem.svelte";
 
+  //@ts-ignore
   import Modal from "sv-bootstrap-modal";
 
   import {
@@ -55,7 +56,7 @@
     return interdata;
   }
 
-  function takeItem(er: BasketItemd) {
+  function removeItem(er: BasketItemd) {
     delete etems[er.id].storage[er.storageId];
     etems = { ...etems };
   }
@@ -142,7 +143,7 @@
     <ItemsViewer
       {addToBasket}
       items={viewItems}
-      {takeItem}
+      {removeItem}
       height={itmheight}
       width={itmWidth}
     />

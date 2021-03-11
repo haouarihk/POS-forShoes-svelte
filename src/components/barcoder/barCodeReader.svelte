@@ -9,10 +9,7 @@
 
     import Item from "../item.svelte";
 
-    export let Class: string = "";
     let dir: string = "items";
-    export let addToBasket: Function;
-    export let item: ItemShop | null = defaults.ItemShop;
 
     let value: string = "";
     function onchange(e: Event) {
@@ -41,10 +38,12 @@
         });
     }
 
-    export let takeItem: any;
+    export var Class: string = "";
+    export var removeItem: Function, addToBasket: Function;
+    export var item: ItemShop | null = defaults.ItemShop;
 </script>
 
 <input class={Class} bind:value on:keypress={onchange} />
 {#if item}
-    <Item data={item} {addToBasket} {takeItem} />
+    <Item data={item} {addToBasket} {removeItem} />
 {/if}

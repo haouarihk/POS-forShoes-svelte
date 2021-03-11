@@ -16,6 +16,58 @@
     }
 </script>
 
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <h1>Login</h1>
+        </div>
+
+        <!-- Login Form -->
+        <div>
+            <input
+                type="text"
+                id="login"
+                class="fadeIn second"
+                name="login"
+                placeholder="login"
+                bind:value={username}
+            />
+            <input
+                type="password"
+                id="password"
+                class="fadeIn third"
+                name="login"
+                placeholder="password"
+                bind:value={password}
+            />
+            <input
+                type="button"
+                class="fadeIn fourth"
+                value="Log In"
+                on:click={login}
+            />
+        </div>
+        <hr />
+        <input
+            type="button"
+            class="fadeIn fourth"
+            value="Login with google"
+            style="background:#4285F4 !important;"
+            on:click={signInWithGoogle}
+        />
+        <hr />
+        <h4 style="color:red !important;">{errorMessage}</h4>
+    </div>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+        <!-- svelte-ignore a11y-invalid-attribute -->
+        <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+</div>
+
 <style>
     /* STRUCTURE */
 
@@ -55,7 +107,7 @@
 
     /* TABS */
 
-    h2.inactive {
+    /* h2.inactive {
         color: #cccccc;
     }
 
@@ -64,7 +116,7 @@
         border-bottom: 2px solid #5fbae9;
     }
 
-    /* FORM TYPOGRAPHY*/
+
 
     input[type="button"],
     input[type="submit"],
@@ -104,7 +156,7 @@
         -o-transform: scale(0.95);
         -ms-transform: scale(0.95);
         transform: scale(0.95);
-    }
+    } */
 
     input[type="text"],
     input[type="password"] {
@@ -264,7 +316,7 @@
         outline: none;
     }
 
-    #icon {
+    /* #icon {
         width: 60%;
     }
 
@@ -300,54 +352,6 @@
         padding-right: 42px;
         font-size: 14px;
         font-weight: bold;
-        /* Use the Roboto font that is loaded in the <head> */
         font-family: "Roboto", sans-serif;
-    }
+    } */
 </style>
-
-<div class="wrapper fadeInDown">
-    <div id="formContent">
-        <!-- Tabs Titles -->
-
-        <!-- Icon -->
-        <div class="fadeIn first">
-            <h1>Login</h1>
-        </div>
-
-        <!-- Login Form -->
-        <div>
-            <input
-                type="text"
-                id="login"
-                class="fadeIn second"
-                name="login"
-                placeholder="login"
-                bind:value={username} />
-            <input
-                type="password"
-                id="password"
-                class="fadeIn third"
-                name="login"
-                placeholder="password"
-                bind:value={password} />
-            <input
-                type="button"
-                class="fadeIn fourth"
-                value="Log In"
-                on:click={login} />
-        </div>
-        <hr />
-        <input
-            type="button"
-            class="fadeIn fourth"
-            value="Login with google"
-            style="background:#4285F4 !important;"
-            on:click={signInWithGoogle} />
-        <hr />
-        <h4 style="color:red !important;">{errorMessage}</h4>
-    </div>
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
-    </div>
-</div>

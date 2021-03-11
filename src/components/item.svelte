@@ -4,21 +4,17 @@
   // import { getContext } from "svelte";
   import { scale } from "svelte/transition";
 
-  import type {
-    BasketItemd,
-    Interdata,
-    ItemShop,
-    Storage,
-  } from "../../d/types";
+  import type { BasketItemd, Interdata, ItemShop } from "../../d/types";
   import StorageHandler from "./builder/storage/storageHandler.svelte";
   import Pre from "./utils/pre.svelte";
 
-  import { getImg, getInterData, toArray } from "./utils/utils";
+  import { getImg, toArray } from "./utils/utils";
   // import EditItemModal from "./modals/editItem-modal.svelte";
 
   import Item from "./builder/item.svelte";
 
   import Modal from "./modal.svelte";
+  import { defaults } from "./utils/defaults";
 
   // firebase stuff
   let db = firebase.database();
@@ -30,7 +26,7 @@
   export let i: number = 0;
   export let id: string = "";
 
-  export let data: ItemShop;
+  export let data: ItemShop = defaults.ItemShop;
   export let addToBasket: Function;
 
   export let selectedItem: BasketItemd = {
@@ -42,70 +38,35 @@
   let defaultPhoto = "./png/defaultshoe.png";
   let soldoutPhoto = "./png/soldout.png";
 
-  let interdata: Interdata[] = [];
-  async function gid() {
-    interdata = await getInterData(db, "items");
-
-    return interdata;
-  }
-
   //will be depricated soon
   let thisRef = { key: id };
 
-  export let takeItem: any;
+  export let removeItem: any;
 
   function atb() {
     console.log(id);
     selectedItem.id = id;
     if (selectedItem.storageId != "")
       if (addToBasket(selectedItem, i)) {
-        takeItem(selectedItem);
+        removeItem(selectedItem);
       } else {
         console.log("YOU CANT TAKE IT AWAY FROM ME");
       }
   }
 
-  export let isExpand: boolean = false;
+  let isExpand: boolean = false;
   let imgwid;
   let imghid;
 
-  //modal stuff
+  //--- modal stuff
   let isOpen: boolean = false;
   let errmsg: string = "";
   async function onclickEdit() {
-    await gid();
-
-    // interdata.map((a) => {
-    //   switch (a.name) {
-    //     case "storage":
-    //       a.data = storage;
-    //       console.log("storged", storage);
-    //       break;
-    //     case "name":
-    //       a.data = displayName;
-    //       break;
-    //     case "price":
-    //       a.data = price;
-    //       break;
-    //     case "buyingPrice":
-    //       a.data = buyingPrice;
-    //       break;
-    //     case "category":
-    //       a.title = category;
-    //       break;
-    //     case "seller":
-    //       a.title = seller;
-    //       break;
-    //   }
-    //   return a;
-    // });
-
-    console.log(interdata);
     isOpen = true;
     //open(EditItemModal,{interdata,submit})
   }
+
   function submit() {}
-  //
 </script>
 
 <div class="baciItem {Class}">
@@ -150,31 +111,32 @@
         {data.displayName} of category {data.category}
       </p>
 
-      {#if isExpand}
-        <div in:scale={{ duration: 100 }} out:scale={{ duration: 100 }}>
-          <hr />
-          <StorageHandler
-            productRef={thisRef}
-            bind:storage={data.storage}
-            bind:selectedItem
-            bind:possibleItems
-          />
-          <button
-            href="#"
-            class="btn {possibleItems.length == 0 ? 'disabled' : 'btn-primary'}"
-            disabled={possibleItems.length == 0}
-            on:click={atb}>add to basket</button
-          >
-        </div>
-      {/if}
+      <div
+        class={isExpand ? "" : "invisible"}
+        in:scale={{ duration: 100 }}
+        out:scale={{ duration: 100 }}
+      >
+        <hr />
+        <StorageHandler
+          productRef={thisRef}
+          bind:storage={data.storage}
+          bind:selectedItem
+          bind:possibleItems
+        />
+        <button
+          href="#"
+          class="btn {possibleItems.length == 0 ? 'disabled' : 'btn-primary'}"
+          disabled={possibleItems.length == 0}
+          on:click={atb}>add to basket</button
+        >
+      </div>
     </div>
   </div>
   {#if isExpand}
     <button style="background:rgba(0,0,0,0)" on:click={() => (isExpand = false)}
       >close</button
     >
-    <button style="background:rgba(0,0,0,0)" on:click={() => onclickEdit()}
-      >Edit</button
+    <button style="background:rgba(0,0,0,0)" on:click={onclickEdit}>Edit</button
     >
   {/if}
 </div>

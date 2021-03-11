@@ -4,7 +4,7 @@
   import { slide } from "svelte/transition";
 
   export let addToBasket: Function;
-  export let takeItem: any;
+  export let removeItem: any;
 
   export let height = "100";
   export let width = "100";
@@ -14,18 +14,12 @@
 
 {#if items[0]}
   <div
-    class="row viewField "
+    class="viewField"
     style="height:{height}px !important; max-width:{width}px !important"
   >
     {#each items as _item, i}
       <div transition:slide|local class="col display-flex">
-        <Item
-          {..._item}
-          {takeItem}
-          {addToBasket}
-          bind:storage={_item.storage}
-          {i}
-        />
+        <Item bind:data={_item} {removeItem} {addToBasket} {i} />
       </div>
     {/each}
   </div>
@@ -36,7 +30,11 @@
     background: #484848 !important;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 1em;
-    margin-bottom: 5px;
+
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-basis: content;
+    gap: 20px;
   }
 </style>

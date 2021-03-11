@@ -24,16 +24,23 @@
   let searchf: string = "";
 
   $: {
-    viewItems = items.filter((val) =>
-      searchf != ""
-        ? val.displayName.indexOf(searchf) != -1
-        : true && chosenCategory != -1
-        ? val.category == categories[chosenCategory]
-        : true && chosenSeller != -1
-        ? val.seller == sellers[chosenSeller]
-        : true
-    );
+    viewItems = items.filter((val) => {
+      let truthy: boolean = true;
+
+      if (val.displayName)
+        if (val.displayName.length != 0)
+          if (val.displayName.indexOf(searchf) == -1) truthy = false;
+
+      if (chosenCategory != -1)
+        if (val.category != categories[chosenCategory]) truthy = false;
+
+      if (chosenSeller != -1)
+        if (val.seller != sellers[chosenSeller]) truthy = false;
+
+      return truthy;
+    });
   }
+
   let isOpen = false;
 </script>
 
@@ -48,7 +55,7 @@
 
     <div class="col-sm-2">
       <DropDown
-        Class="col-12"
+        Class="col"
         items={settings}
         title="⋮"
         selective={false}

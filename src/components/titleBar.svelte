@@ -1,6 +1,19 @@
 <script lang="ts">
 </script>
 
+<!-- 
+<div id="electron-titlebar">
+    <div class="drag container">{document.title}</div>
+    <button
+        id="exit"
+        on:click={() => {
+            window.close();
+        }}>x</button>
+</div> -->
+<!-- svelte-ignore a11y-missing-attribute -->
+
+<div id="electron-titlebar" />
+
 <style>
     /* #electron-titlebar {
         background: white;
@@ -28,7 +41,7 @@
         height: 100%;
         position: absolute;
     }*/
-    #button-close {
+    /* #button-close {
         margin-left: 98.5%;
         margin-top: -0.1cm;
         height: 2em;
@@ -41,18 +54,5 @@
     #button-close:focus {
         background: red;
         border: 0;
-    }
+    } */
 </style>
-
-<!-- 
-<div id="electron-titlebar">
-    <div class="drag container">{document.title}</div>
-    <button
-        id="exit"
-        on:click={() => {
-            window.close();
-        }}>x</button>
-</div> -->
-<!-- svelte-ignore a11y-missing-attribute -->
-
-<div id="electron-titlebar" />

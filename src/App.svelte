@@ -96,7 +96,7 @@
     }
   }
 
-  let takeback: any;
+  let takeback: Function, removeItem: Function;
 </script>
 
 <TitleBar />
@@ -125,7 +125,6 @@
     <div class="flex flex-wrap py-2">
       <div class="w-full px-4">
         <!-- <BasketItemViewer bind:basketItems bind:totalCost {takeback} /> -->
-
         <div class="">
           <div class="row">
             <div class="col-sm-12">
@@ -142,6 +141,7 @@
                     bind:totalCost
                     bind:takeback
                     bind:etems
+                    bind:removeItem
                   />
                 </div>
               {/each}

@@ -137,7 +137,12 @@ export namespace NewItem {
     barcode?: any;
   }
   export interface category {
-    displayName: string;
-    discription: string;
+    displayName?: string;
+    discription?: string;
+  }
+
+  export interface color {
+    displayName?: string;
+    discription?: string;
   }
 }

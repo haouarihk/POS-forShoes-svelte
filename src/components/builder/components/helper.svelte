@@ -59,10 +59,10 @@
         background-color: #f1f1f1;
         width: 100%;
     }
-    input[type="submit"] {
+    /* input[type="submit"] {
         background-color: DodgerBlue;
         color: #fff;
-    }
+    } */
     .autocomplete-items {
         position: absolute;
         border: 1px solid #696969;
@@ -84,9 +84,9 @@
         /*when hovering an item:*/
         background: #555454;
     }
-    .autocomplete-active {
-        /*when navigating through the items using the arrow keys:*/
+    /* .autocomplete-active {
+        
         background-color: DodgerBlue !important;
         color: #ffffff;
-    }
+    } */
 </style>

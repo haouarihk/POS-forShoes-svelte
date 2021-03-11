@@ -6,6 +6,7 @@
     import Lister from "./components/lister.svelte";
     import Category from "./category.svelte";
     import Seller from "./seller.svelte";
+    import StorageMaker from "./storage/storageMaker.svelte";
 
     // function handleInputType(e: any, type: string) {
     //     e.target.type = type;
@@ -47,4 +48,6 @@
     <div class="col-6 dk">
         Price: <input type="number" bind:value={values.price} />
     </div>
+
+    <StorageMaker bind:storage={values.storage} productId={values.id} />
 </Template>
