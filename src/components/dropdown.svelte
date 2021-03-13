@@ -1,9 +1,29 @@
 <script lang="ts">
   import { scale, slide } from "svelte/transition";
+
+  export let Class: string = "";
+  export let Style: string = "";
+  export let defaultTitle: string = "dropdown";
+
+  export let title: string;
+
+  export let items: string[] = [];
+
+  export let selective: boolean = true;
+  export let addedable: boolean = false;
+
+  export let cb: (displayName: string, index: number) => void = () => {};
+  export let cap: Function = () => {};
+
   let normalTitle = title;
   let viewdItems: string[] = [];
   let toggler = false;
   let search: string = "";
+
+  let focusedOn: number = 0;
+
+  title = "dropdown";
+
   function changetitle(_i: string, isnew: boolean, i_optional?: number) {
     let index = i_optional || items.indexOf(_i);
     value = index;
@@ -28,6 +48,7 @@
   }
 
   function init(e: any) {
+    focusedOn = 0;
     e.focus();
     e.select();
     e.setSelectionRange(0, e.value.length);
@@ -35,7 +56,27 @@
   }
 
   function onsearch(e: any) {
-    if (e.keyCode == 13) changetitle(viewdItems[0], viewdItems.length == 0);
+    if (e.keyCode == 13 || e.keyCode == 9) {
+      if (viewdItems[focusedOn]) {
+        search = viewdItems[focusedOn];
+        changetitle(viewdItems[focusedOn], viewdItems.length == 0);
+      } else {
+        changetitle(search, viewdItems.length == 0);
+      }
+      toggler = false;
+    } else if (e.keyCode == 27) {
+      toggler = false;
+    } else if (e.keyCode == 40) {
+      if (focusedOn >= items.length) {
+        focusedOn = -1;
+      }
+      focusedOn++;
+    } else if (e.keyCode == 38) {
+      if (focusedOn < 0) {
+        focusedOn = items.length;
+      }
+      focusedOn--;
+    }
   }
 
   $: {
@@ -43,14 +84,6 @@
     if (search == "") title = normalTitle;
   }
 
-  export var Class: string = "";
-  export var Style: string = "";
-  export var items: string[] = [];
-  export var title: string = "dropdown";
-  export var selective: boolean = true;
-  export var addedable: boolean = false;
-  export var cap: Function = () => {};
-  export var cb: (displayName: string, index: number) => void = () => {};
   export var value: number = -1;
 </script>
 
@@ -61,14 +94,16 @@
       class="btn btn-secondary  col-12"
       on:click={() => (toggler = true)}
     >
-      {title}<span>↵</span>
+      {title == undefined || title == "undefined" ? defaultTitle : title}<span
+        >↵</span
+      >
     </button>
   {:else}
     <input
       type="text"
       class="btn btn-secondary col-12"
       bind:value={search}
-      on:keypress={onsearch}
+      on:keyup={onsearch}
       on:blur={() =>
         setTimeout(() => {
           toggler = false;
@@ -82,9 +117,9 @@
       {#each viewdItems as _i, i}
         <button
           transition:slide|local
-          class={"darkTheme border border-primary " + selective
-            ? "dropdown-item "
-            : ""}
+          class={`darkTheme border border-primary 
+          dropdown-item 
+            ${focusedOn == i ? "selected" : ""}`}
           type="button"
           on:click={() => {
             cap(_i, i);
@@ -131,5 +166,10 @@
   }
   .brr {
     margin-bottom: 1em;
+  }
+
+  .selected {
+    background: rgb(187, 185, 185);
+    color: black !important;
   }
 </style>

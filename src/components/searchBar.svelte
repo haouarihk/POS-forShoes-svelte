@@ -96,10 +96,12 @@
   .botomborder {
     border-bottom: rgba(109, 109, 109, 0.308) solid 1mm !important;
   }
+
   /* .pad {
     padding: 1em;
     height: 100px;
   } */
+
   .cup {
     margin-left: 1em;
     background: #282828;

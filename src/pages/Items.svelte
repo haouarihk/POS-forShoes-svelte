@@ -2,10 +2,6 @@
   import "firebase/firestore";
   import "firebase/auth";
   import "firebase/storage";
-  import {
-    Collection,
-    //@ts-ignore
-  } from "sveltefire";
 
   import ItemsViewer from "../components/itemsViewer.svelte";
   import SearchBar from "../components/searchBar.svelte";
@@ -23,7 +19,6 @@
   import type { BasketItemd, Interdata, ItemShop } from "../../d/types";
 
   import fb from "firebase";
-  import Globalizer from "../components/utils/globalizer.svelte";
   import Item from "../components/builder/item.svelte";
   import { defaults } from "../components/utils/defaults";
 
@@ -52,8 +47,7 @@
   //getItems();
 
   async function getdata() {
-    interdata = await getInterData(db, "items");
-    return interdata;
+    etems = (await db.ref("/items").get()).val();
   }
 
   function removeItem(er: BasketItemd) {
@@ -87,13 +81,8 @@
     }
   }
 
-  async function requestOpen(dd: string, dd2: any) {
-    await getdata();
-
+  async function requestOpen(dd: string) {
     if (dd == "add new") {
-      interdata = interdata.map((a) => {
-        return { ...a, ...{ data: dd2[a.title] } };
-      });
       isOpen = true;
     }
   }
@@ -127,9 +116,9 @@
 </script>
 
 <!-- _items  => etems => toarray => items -->
-<Collection path={`items`} let:data={_et} let:ref={itemsRef}>
-  <Globalizer data={_et} bind:data2={etems} />
-
+{#await getdata()}
+  wait
+{:then _}
   <SearchBar
     {items}
     bind:viewItems
@@ -148,7 +137,7 @@
       width={itmWidth}
     />
   {/if}
-</Collection>
+{/await}
 
 <Modal bind:open={isOpen}>
   {#if state == 1}
@@ -196,10 +185,11 @@
   .close {
     border-radius: 22%;
   }
-  .searchi {
+
+  /* .searchi {
     box-shadow: 0em 0em 10em black;
     width: 100%;
-  }
+  } */
   .poper {
     display: absolute;
   }

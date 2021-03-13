@@ -45,7 +45,7 @@
             />
             <input
                 type="button"
-                class="fadeIn fourth"
+                class="fadeIn fourth kh"
                 value="Log In"
                 on:click={login}
             />
@@ -53,7 +53,7 @@
         <hr />
         <input
             type="button"
-            class="fadeIn fourth"
+            class="fadeIn fourth kh"
             value="Login with google"
             style="background:#4285F4 !important;"
             on:click={signInWithGoogle}
@@ -108,19 +108,17 @@
     /* TABS */
 
     /* h2.inactive {
-        color: #cccccc;
-    }
+            color: #cccccc;
+        }
 
-    h2.active {
-        color: #0d0d0d;
-        border-bottom: 2px solid #5fbae9;
-    }
+        h2.active {
+            color: #0d0d0d;
+            border-bottom: 2px solid #5fbae9;
+        }
 
+    */
 
-
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"] {
+    .kh {
         background-color: #56baed;
         border: none;
         color: white;
@@ -142,21 +140,17 @@
         transition: all 0.3s ease-in-out;
     }
 
-    input[type="button"]:hover,
-    input[type="submit"]:hover,
-    input[type="reset"]:hover {
+    .kh:hover {
         background-color: #39ace7;
     }
 
-    input[type="button"]:active,
-    input[type="submit"]:active,
-    input[type="reset"]:active {
+    .kh:active {
         -moz-transform: scale(0.95);
         -webkit-transform: scale(0.95);
         -o-transform: scale(0.95);
         -ms-transform: scale(0.95);
         transform: scale(0.95);
-    } */
+    }
 
     input[type="text"],
     input[type="password"] {
@@ -316,10 +310,11 @@
         outline: none;
     }
 
-    /* #icon {
+    /*
+    #icon {
         width: 60%;
     }
-
+    
     #customBtn {
         display: inline-block;
         background: white;
@@ -333,6 +328,7 @@
     #customBtn:hover {
         cursor: pointer;
     }
+
     span.label {
         font-family: serif;
         font-weight: normal;
@@ -345,6 +341,7 @@
         width: 42px;
         height: 42px;
     }
+    
     span.buttonText {
         display: inline-block;
         vertical-align: middle;

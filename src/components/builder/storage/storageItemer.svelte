@@ -15,26 +15,27 @@
 
     // input
     export let storage: Storage;
-    export let productId: string="";
+    export let productId: string = "";
     //
 
     // optional outputs
-    export let arrayStorage: StorageItem[]=[];
-    export let _theMod: number=0;
+    export let arrayStorage: StorageItem[] = [];
+    export let _theMod: number = 0;
 
     export let selectedColorIndex: number = -1;
     export let selectedSizeIndex: number = -1;
-    export let _colors: any={}, _sizes: any={};
+    export let _colors: any = {},
+        _sizes: any = {};
     //
 
     // output
-    export let possibleColors: string[]=[];
-    export let possibleSizes: number[]=[];
+    export let possibleColors: string[] = [];
+    export let possibleSizes: number[] = [];
 
-    export let selectedColor: string="";
-    export let selectedSize: number=0;
+    export let selectedColor: string = "";
+    export let selectedSize: number = 0;
 
-    export let possibleItems: BasketItemd[]=[];
+    export let possibleItems: BasketItemd[] = [];
     export let selectedItem: BasketItemd = {
         id: productId,
         storageId: "",
@@ -53,7 +54,7 @@
         }
     }
 
-    // update arrayStorag 
+    // update arrayStorag
     $: {
         arrayStorage = toArray(storage);
     }
@@ -61,7 +62,9 @@
     // update possibleColors and possibleSizes
     $: {
         possibleColors = filterTheSame(getListOf(arrayStorage, "color"));
-        possibleSizes = filterTheSame(getListOf(arrayStorage, "size")).map(a=>+a);
+        possibleSizes = filterTheSame(getListOf(arrayStorage, "size")).map(
+            (a) => +a
+        );
     }
 
     // getting constructed storage based on colors over sizes and the opposite
@@ -99,13 +102,11 @@
 
     // get possible Items from this set of selection
     $: {
+        let filterdArray = arrayStorage.filter(
+            ({ color }) => color == selectedColor
+        );
 
-        let filterdArray = arrayStorage.filter(({color}) => 
-            color == selectedColor);
-        
-
-        filterdArray = arrayStorage.filter(({size}) =>  
-            size ==  selectedSize);
+        filterdArray = arrayStorage.filter(({ size }) => size == selectedSize);
 
         possibleItems = filterdArray.map((a) => ({
             id: productId,
@@ -118,7 +119,6 @@
         if (possibleItems[0]) {
             selectedItem = possibleItems[0];
         }
-
     }
 
     let wid;
@@ -132,7 +132,9 @@
                 Class="{wid < 200 ? 'col-12' : 'col-6'} cup pad0 brr"
                 items={possibleColors}
                 bind:value={selectedColorIndex}
-                title={selectedColor} />
+                defaultTitle="Color"
+                title={selectedColor}
+            />
 
             {#if selectedColorIndex != -1}
                 <h5 class=" {wid < 200 ? 'col-12' : 'col-6'}">Size:</h5>
@@ -141,15 +143,19 @@
                     Class="{wid < 200 ? 'col-12' : 'col-6'} cup pad0 brr"
                     items={_colors[possibleColors[selectedColorIndex]].sizes}
                     bind:value={selectedSizeIndex}
-                    title={'' + selectedSize} />
+                    defaultTitle="Size"
+                    title={"" + selectedSize}
+                />
             {/if}
         {:else if _theMod == 1}
             <h5 class=" {wid < 200 ? 'col-12' : 'col-6'}">Size:</h5>
             <Dropdown
                 Class="{wid < 200 ? 'col-12' : 'col-6'} cup pad0 brr"
-                items={possibleSizes.map((a) => '' + a)}
+                items={possibleSizes.map((a) => "" + a)}
                 bind:value={selectedSizeIndex}
-                title={'' + selectedSize} />
+                defaultTitle="Size"
+                title={"" + selectedSize}
+            />
 
             {#if selectedSizeIndex != -1}
                 <h5 class=" {wid < 200 ? 'col-12' : 'col-6'}">Color:</h5>
@@ -158,7 +164,9 @@
                     Class="{wid < 200 ? 'col-12' : 'col-6'} cup pad0 brr"
                     items={_sizes[possibleSizes[selectedSizeIndex]].colors}
                     bind:value={selectedColorIndex}
-                    title={selectedColor} />
+                    defaultTitle="Color"
+                    title={selectedColor}
+                />
             {/if}
         {:else}
             <h5 class=" {wid < 200 ? 'col-12' : 'col-6'}">Color:</h5>
@@ -166,14 +174,18 @@
                 Class="{wid < 200 ? 'col-12' : 'col-6'} cup pad0 brr"
                 items={possibleColors}
                 bind:value={selectedColorIndex}
-                title={selectedColor} />
+                defaultTitle="Color"
+                title={selectedColor}
+            />
 
             <h5 class=" {wid < 200 ? 'col-12' : 'col-6'}">Size:</h5>
             <Dropdown
                 Class="{wid < 200 ? 'col-12' : 'col-6'} cup pad0 brr"
-                items={possibleSizes.map((a) => '' + a)}
+                items={possibleSizes.map((a) => "" + a)}
                 bind:value={selectedSizeIndex}
-                title={'' + selectedSize} />
+                defaultTitle="Size"
+                title={"" + selectedSize}
+            />
         {/if}
     {/if}
 </div>
