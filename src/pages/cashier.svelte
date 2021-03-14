@@ -2,6 +2,14 @@
     import BarCodeReader from "../components/barcoder/barCodeReader.svelte";
     import Client from "../components/builder/client.svelte";
     import Lister from "../components/builder/components/lister.svelte";
+    import { Lang } from "../components/utils/lang";
+
+    export let lang: string = "English";
+
+    let langi: Lang.types.Cashier;
+    $: {
+        langi = Lang.langs[lang].cashier;
+    }
 
     // export let basketItems: BasketItemd[];
     // export let arrayitems: any[] = [];
@@ -15,12 +23,14 @@
 
 <main class="main">
     <div class="row">
-        <h3 class="col-6">Add item by Barcode:</h3>
+        <h3 class="col-6">
+            {langi.AddByBarcode}:
+        </h3>
         <BarCodeReader Class="col-6" {addToBasket} {removeItem} />
     </div>
     <br />
     <div class="row">
-        <h3 class="col-6">select Costumer:</h3>
+        <h3 class="col-6">{langi.SeleteCostumer}:</h3>
         <Lister
             component={Client}
             Class="col-6"

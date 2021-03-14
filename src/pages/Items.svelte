@@ -3,6 +3,15 @@
   import "firebase/auth";
   import "firebase/storage";
 
+  import { Lang } from "../components/utils/lang";
+
+  export let lang: string = "English";
+
+  let langifi: Lang.types.Filter;
+  $: {
+    langifi = Lang.langs[lang].filter;
+  }
+
   import ItemsViewer from "../components/itemsViewer.svelte";
   import SearchBar from "../components/searchBar.svelte";
   // import NewItem from "../components/creation/newItem.svelte";
@@ -82,7 +91,7 @@
   }
 
   async function requestOpen(dd: string) {
-    if (dd == "add new") {
+    if (dd == langifi.addNewItem) {
       isOpen = true;
     }
   }
@@ -117,7 +126,7 @@
 
 <!-- _items  => etems => toarray => items -->
 {#await getdata()}
-  wait
+  {Lang.langs[lang].general.loading}
 {:then _}
   <SearchBar
     {items}
@@ -141,15 +150,17 @@
 
 <Modal bind:open={isOpen}>
   {#if state == 1}
-    loading..
+    {Lang.langs[lang].general.loading}
   {:else if state == 2}
-    Error:
+    {Lang.langs[lang].editing.error}:
     {errmsg}
-    <button on:click={() => (state = 0)}>return</button>
+    <button on:click={() => (state = 0)}
+      >{Lang.langs[lang].editing.return}</button
+    >
   {:else}
     <div class="poper">
       <div class="modal-header f1">
-        <h5 class="modal-title">Add item</h5>
+        <h5 class="modal-title">{langifi.addNewItem}</h5>
         <button
           type="button"
           class="close bg-danger"
@@ -167,14 +178,15 @@
         <button
           type="button"
           class="btn btn-secondary"
-          on:click={() => (isOpen = false)}>Close</button
+          on:click={() => (isOpen = false)}
+          >{Lang.langs[lang].editing.close}</button
         >
         <button
           type="button"
           class="btn btn-primary"
           on:click={() => {
             createNewItem();
-          }}>Create</button
+          }}>{Lang.langs[lang].editing.create}</button
         >
       </div>
     </div>

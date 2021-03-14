@@ -1,45 +1,126 @@
 export namespace Lang {
     export const usedLang = "English";
 
-    export namespace English {
-        export const general = {
-            cashier: "Cashier",
-            items: "items",
-            logs: "logs",
 
-            log: "log",
+    export namespace types {
+        export interface General {
+            cashier: string;
+            items: string;
+            logs: string;
 
-            sellers: "sellers",
-            category: "Category",
-            Filters: "Filters",
+            log: string;
+
+            sellers: string;
+            category: string;
+            Filters: string;
+
+            loading: string;
+        }
+        export interface Cashier {
+            AddByBarcode: string;
+            SeleteCostumer: string;
+        }
+        export interface LogInPage {
+            login: string;
+            logout: string;
+
+            ForgotPassword: string;
+            loginWithGoogle: string;
+
+            username: string;
+            password: string;
+
+            notLoggedIn: string;
         }
 
-        export const cashier = {
-            AddByBarcode: "Add item by Barcode",
-            SeleteCostumer: "Select Costumer"
+        export interface Filter {
+            Filters: string;
+            addNewItem: string;
         }
 
-        export const logInPage = {
-            login: "LogIn",
-            logout: "LogOut",
+        export interface Editing {
+            create: string;
+            edit: string;
+            open: string;
+            close: string;
+            deleteAllLogs: string;
 
-            ForgotPassword: "Forgot password?",
-            loginWithGoogle: "Login using google",
-
-            username: "Username",
-            password: "Password",
-
-            notLoggedIn: "Not logged in yet"
+            error: string;
+            return: string;
         }
-
-        export const filter = {
-            Filters: "Filters",
-            addNewItem: "Add new"
+        export interface Language {
+            general: General;
+            cashier: Cashier;
+            logInPage: LogInPage;
+            filter: Filter;
+            editing: Editing;
         }
-        export const editing = {
-            edit: "edit",
-            open: "open",
-            deleteAllLogs: "Delete all logs"
+        export interface Langies {
+            [key: string]: Language
+        }
+    }
+
+
+    export const langs: types.Langies = {
+        English: {
+            general: {
+                cashier: "Cashier",
+                items: "items",
+                logs: "logs",
+
+                log: "log",
+
+                sellers: "sellers",
+                category: "Category",
+                Filters: "Filters",
+
+                loading: "loading..."
+
+            },
+
+            cashier: {
+                AddByBarcode: "Add item by Barcode",
+                SeleteCostumer: "Select Costumer"
+            },
+
+            logInPage: {
+                login: "LogIn",
+                logout: "LogOut",
+
+                ForgotPassword: "Forgot password?",
+                loginWithGoogle: "Login using google",
+
+                username: "Username",
+                password: "Password",
+
+                notLoggedIn: "Not logged in yet"
+            },
+
+            filter: {
+                Filters: "Filters",
+                addNewItem: "Add Item"
+            },
+
+            editing: {
+                create: "Create",
+                edit: "edit",
+                open: "open",
+                close: "Close",
+                deleteAllLogs: "Delete all logs",
+
+                error: "Error",
+                return: "Return",
+
+                Item: {
+                    Name: "Name",
+                    BarCode: "BarCode",
+                    Seller: "Seller",
+                    Category: "Category",
+                    buyingPrice: "buyingPrice",
+                    Price: "Price",
+                    Storage: "Storage",
+                }
+            }
         }
     }
 

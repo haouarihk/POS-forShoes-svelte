@@ -55,7 +55,8 @@ export default {
 
 		replace({
 			fbConfig: JSON.stringify(require("./firebaseConfig.json")),
-			env: JSON.stringify(dotenv.config())
+			denv: dotenv.config()
+
 		}),
 		svelte({
 			preprocess: sveltePreprocess({

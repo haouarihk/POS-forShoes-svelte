@@ -9,6 +9,7 @@
     User,
     //@ts-ignore
   } from "sveltefire";
+
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
@@ -24,6 +25,9 @@
 
   import { navOptions } from "./naver.svelte";
   let { selectedPage, intSelectedPage } = qgnu(ph, navOptions);
+
+  let lang = ph.get("lang", "English");
+  const changeLang = (to: string) => ph.set("lang", to);
 
   function changePage(event: any) {
     selectedPage = navOptions[event.srcElement.id];
@@ -141,6 +145,8 @@
                     bind:takeback
                     bind:etems
                     bind:removeItem
+                    {lang}
+                    {changeLang}
                   />
                 </div>
               {/each}
