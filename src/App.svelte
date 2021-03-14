@@ -25,7 +25,6 @@
   import { navOptions } from "./naver.svelte";
   let { selectedPage, intSelectedPage } = qgnu(ph, navOptions);
 
-  // change the selected component (the event.originalTarget.id is not accessible in Chrome so switched to event.srcElement.id)
   function changePage(event: any) {
     selectedPage = navOptions[event.srcElement.id];
     intSelectedPage = event.srcElement.id;

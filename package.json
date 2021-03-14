@@ -6,7 +6,7 @@
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
-    "app": "cd app && tsc && electron ./dist/main.js",
+    "app": "npx tsc -c ./app/tsconfig.json && electron ./dist/main.js",
     "apw": "cd app && tsc --watch"
   },
   "devDependencies": {

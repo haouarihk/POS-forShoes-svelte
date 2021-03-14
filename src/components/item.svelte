@@ -15,6 +15,7 @@
 
   import Modal from "./modal.svelte";
   import { defaults } from "./utils/defaults";
+  import Shoe from "./defaults/shoe.svelte";
 
   // firebase stuff
   let db = firebase.database();
@@ -34,9 +35,6 @@
     storageId: "",
   };
   export let possibleItems: BasketItemd[] = [];
-
-  let defaultPhoto = "./png/defaultshoe.png";
-  let soldoutPhoto = "./png/soldout.png";
 
   //will be depricated soon
   let thisRef = { key: id };
@@ -77,31 +75,37 @@
       isExpand = true;
     }}
   >
-    {#await getImg(fStorage, "images/" + data.photoURL)}
-      <div class="parentimg">
-        <img src={defaultPhoto} class="card-img-top img1" alt="..." />
-
-        <img src={soldoutPhoto} class="img2" alt="..." />
-      </div>
-    {:then _}
-      <div
-        class="parentimg"
-        bind:offsetHeight={imghid}
-        bind:offsetWidth={imgwid}
-      >
-        <img src={_ || defaultPhoto} class="card-img-top" alt="..." />
-
-        {#if toArray(data.storage).length == 0}
+    {#if data.photoURL != ""}
+      {#await getImg(fStorage, "images/" + data.photoURL)}
+        <Shoe Class="card-img-top img1" />
+      {:then _}
+        <div
+          class="parentimg"
+          bind:offsetHeight={imghid}
+          bind:offsetWidth={imgwid}
+        >
           <img
-            src={soldoutPhoto}
-            class="img2"
+            src={_ || defaults.defaultPhoto}
+            class="card-img-top"
             alt="..."
-            width={imgwid}
-            height={imghid}
           />
-        {/if}
-      </div>
-    {/await}
+
+          {#if toArray(data.storage).length == 0}
+            <img
+              src={defaults.soldoutPhoto}
+              class="img2"
+              alt="..."
+              width={imgwid}
+              height={imghid}
+            />
+          {/if}
+        </div>
+      {:catch}
+        <Shoe Class="card-img-top img1" />
+      {/await}
+    {:else}
+      <Shoe Class="card-img-top img1" />
+    {/if}
 
     <div class="card-body greeny">
       <h5 class="card-title">
@@ -113,8 +117,8 @@
 
       <div
         class={isExpand ? "" : "invisible"}
-        in:scale={{ duration: 100 }}
-        out:scale={{ duration: 100 }}
+        in:scale={defaults.style.scaleIn}
+        out:scale={defaults.style.scaleOut}
       >
         <hr />
         <StorageHandler

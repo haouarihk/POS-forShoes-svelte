@@ -7,6 +7,9 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
 
+import dotenv from "dotenv"
+
+
 import replace from '@rollup/plugin-replace';
 
 
@@ -51,7 +54,8 @@ export default {
 		}),
 
 		replace({
-			fbConfig: JSON.stringify(require("./firebaseConfig.json"))
+			fbConfig: JSON.stringify(require("./firebaseConfig.json")),
+			env: JSON.stringify(dotenv.config())
 		}),
 		svelte({
 			preprocess: sveltePreprocess({

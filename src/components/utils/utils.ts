@@ -1,3 +1,4 @@
+import type firebase from "firebase"
 
 /** tunrs an object to array 
  * 
@@ -45,7 +46,7 @@ export let instructId = (objs: any) => {
 }
 
 /** get interdata out of the realtime database */
-export async function getInterData(db: any, interdatatype: string):Promise<Array<any>> {
+export async function getInterData(db: any, interdatatype: string): Promise<Array<any>> {
 
     return new Promise((solve, reject) => {
         if (interdatatype) {
@@ -128,7 +129,7 @@ export async function getMultiItemStorage(db: any, _basketItems: Array<{ id: str
 
 
 /* download image out of firebase storage */
-export function getImg(fStorage: any, photoRef: string):Promise<string> {
+export async function getImg(fStorage: firebase.storage.Storage, photoRef: string): Promise<string> {
     return new Promise((s, r) => {
         fStorage.ref(photoRef).getDownloadURL().then(s).catch(r)
     })
