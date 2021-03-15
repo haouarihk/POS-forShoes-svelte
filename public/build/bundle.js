@@ -52506,7 +52506,6 @@ var app = (function () {
 
     var Lang;
     (function (Lang) {
-        Lang.usedLang = "English";
         Lang.langs = {
             English: {
                 general: {
@@ -52544,14 +52543,16 @@ var app = (function () {
                     deleteAllLogs: "Delete all logs",
                     error: "Error",
                     return: "Return",
-                    Item: {
-                        Name: "Name",
-                        BarCode: "BarCode",
-                        Seller: "Seller",
-                        Category: "Category",
-                        buyingPrice: "buyingPrice",
-                        Price: "Price",
-                        Storage: "Storage",
+                    objects: {
+                        item: {
+                            Name: "Name",
+                            BarCode: "BarCode",
+                            Seller: "Seller",
+                            Category: "Category",
+                            buyingPrice: "buyingPrice",
+                            Price: "Price",
+                            Storage: "Storage",
+                        }
                     }
                 }
             }

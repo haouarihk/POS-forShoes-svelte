@@ -2,11 +2,12 @@
     import BarCodeReader from "../components/barcoder/barCodeReader.svelte";
     import Client from "../components/builder/client.svelte";
     import Lister from "../components/builder/components/lister.svelte";
-    import { Lang } from "../components/utils/lang";
+    import { Lang } from "../../lang/lang";
+    import type { LangTypes } from "../../d/types";
 
     export let lang: string = "English";
 
-    let langi: Lang.types.Cashier;
+    let langi: LangTypes.Cashier;
     $: {
         langi = Lang.langs[lang].cashier;
     }

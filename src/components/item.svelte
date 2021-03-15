@@ -4,7 +4,7 @@
   // import { getContext } from "svelte";
   import { scale } from "svelte/transition";
 
-  import type { BasketItemd, Interdata, ItemShop } from "../../d/types";
+  import type { BasketItemd, ItemShop } from "../../d/types";
   import StorageHandler from "./builder/storage/storageHandler.svelte";
   import Pre from "./utils/pre.svelte";
 
@@ -34,6 +34,7 @@
     id,
     storageId: "",
   };
+
   export let possibleItems: BasketItemd[] = [];
 
   //will be depricated soon

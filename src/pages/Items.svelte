@@ -3,11 +3,11 @@
   import "firebase/auth";
   import "firebase/storage";
 
-  import { Lang } from "../components/utils/lang";
+  import { Lang } from "../../lang/lang";
 
   export let lang: string = "English";
 
-  let langifi: Lang.types.Filter;
+  let langifi: LangTypes.Filter;
   $: {
     langifi = Lang.langs[lang].filter;
   }
@@ -16,27 +16,22 @@
   import SearchBar from "../components/searchBar.svelte";
   // import NewItem from "../components/creation/newItem.svelte";
 
+  import "../../d/globals";
   //@ts-ignore
   import Modal from "sv-bootstrap-modal";
 
-  import {
-    getInterData,
-    getUnicId,
-    instructId,
-    toArray,
-  } from "../components/utils/utils";
-  import type { BasketItemd, Interdata, ItemShop } from "../../d/types";
+  import { instructId, toArray } from "../components/utils/utils";
+  import type { BasketItemd, ItemShop, LangTypes } from "../../d/types";
 
   import fb from "firebase";
   import Item from "../components/builder/item.svelte";
   import { defaults } from "../components/utils/defaults";
 
   let db = fb.database();
-  let fStorage = fb.storage();
-  let fsdb = fb.firestore();
+  // let fStorage = fb.storage();
+  // let fsdb = fb.firestore();
   export let addToBasket: Function;
 
-  let interdata: Interdata[];
   let items: ItemShop[] = [];
 
   let categories: string[];
@@ -48,11 +43,11 @@
   let state: number = 0;
   let errmsg: string = "";
 
-  async function getItems() {
-    return db.ref(`items`).on("value", (snap) => {
-      etems = snap.val() || {};
-    });
-  }
+  // async function getItems() {
+  //   return db.ref(`items`).on("value", (snap) => {
+  //     etems = snap.val() || {};
+  //   });
+  // }
   //getItems();
 
   async function getdata() {
