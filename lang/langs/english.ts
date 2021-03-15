@@ -55,7 +55,7 @@ export const English: LangTypes.Language = {
     modals: {
         item: {
             photo: "photo",
-            Name: "Name",
+            displayName: "Name",
             BarCode: "BarCode",
             Seller: "Seller",
             Category: "Category",

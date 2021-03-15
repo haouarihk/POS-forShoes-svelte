@@ -154,7 +154,7 @@ export namespace LangTypes {
   export namespace modals {
     export interface Item {
       photo: string;
-      Name: string;
+      displayName: string;
       BarCode: string;
       Seller: string;
       Category: string;

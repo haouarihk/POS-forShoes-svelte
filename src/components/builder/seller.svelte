@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { NewItem } from "../../../d/types";
 
-    import Template from "./template.svelte";
+    import Template from "./temps/template.svelte";
 
     export let values: NewItem.all = {};
 </script>

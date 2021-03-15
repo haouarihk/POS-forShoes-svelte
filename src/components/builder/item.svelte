@@ -1,12 +1,21 @@
 <script lang="ts">
-    import Template from "./template.svelte";
+    import Template from "./temps/template.svelte";
     import BarCodeSetter from "../barcoder/barCodeSetter.svelte";
-    import type { ItemShop } from "../../../d/types";
+    import type { ItemShop, LangTypes } from "../../../d/types";
     import { defaults } from "../utils/defaults";
     import Lister from "./components/lister.svelte";
     import Category from "./category.svelte";
     import Seller from "./seller.svelte";
     import StorageMaker from "./storage/storageMaker.svelte";
+    import { Lang } from "../../../lang/lang";
+    import ItemTemplate from "./temps/itemTemplate.svelte";
+
+    export let lang: string;
+
+    let ilang: LangTypes.modals.Item;
+    $: {
+        ilang = Lang.langs[lang].modals.item;
+    }
 
     // function handleInputType(e: any, type: string) {
     //     e.target.type = type;
@@ -21,43 +30,41 @@
 </script>
 
 <Template>
-    <div class="col-6 dk">
-        Name: <input type="text" bind:value={values.displayName} />
-    </div>
+    <ItemTemplate title={ilang.displayName}>
+        <input type="text" bind:value={values.displayName} />
+    </ItemTemplate>
 
-    <div class="col-6 dk">
-        BarCode: <BarCodeSetter Class="col-12" bind:value={values.barcode} />
-    </div>
+    <ItemTemplate title={ilang.BarCode}>
+        <BarCodeSetter Class="col-12" bind:value={values.barcode} />
+    </ItemTemplate>
 
-    <div class="col-12 dk mt-4">
-        Seller: <Lister
+    <ItemTemplate title={ilang.Seller} Class="col-12 dk mt-4">
+        <Lister
             component={Seller}
             Class=" dk"
             dir="sellers"
             bind:title={values.seller}
         />
-    </div>
+    </ItemTemplate>
 
-    <div class="col-12 dk">
-        Category: <Lister
+    <ItemTemplate title={ilang.Category} Class="col-12 dk mt-4">
+        <Lister
             component={Category}
             Class=" dk"
             dir="categories"
             bind:title={values.category}
         />
-    </div>
-    <div class="col-6 dk">
-        buyingPrice: <input type="number" bind:value={values.buyingPrice} />
-    </div>
+    </ItemTemplate>
 
-    <div class="col-6 dk">
-        Price: <input type="number" bind:value={values.price} />
-    </div>
+    <ItemTemplate title={ilang.buyingPrice}>
+        <input type="number" bind:value={values.buyingPrice} />
+    </ItemTemplate>
 
-    <div class="col-12 dk mt-5">
-        Storage:<StorageMaker
-            bind:storage={values.storage}
-            productId={values.id}
-        />
-    </div>
+    <ItemTemplate title={ilang.Price}>
+        <input type="number" bind:value={values.price} />
+    </ItemTemplate>
+
+    <ItemTemplate title={ilang.Storage} Class="col-12 dk mt-5">
+        <StorageMaker bind:storage={values.storage} productId={values.id} />
+    </ItemTemplate>
 </Template>

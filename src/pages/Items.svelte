@@ -165,7 +165,7 @@
         </button>
       </div>
       <div class="modal-body f2">
-        <Item bind:values={newItemData} />
+        <Item bind:values={newItemData} {lang} />
 
         {errmsg}
       </div>

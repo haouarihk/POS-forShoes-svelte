@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Template from "./template.svelte";
+    import Template from "./temps/template.svelte";
     import Helper from "./components/helper.svelte";
 
     export var possibleColors: string[] = [];
