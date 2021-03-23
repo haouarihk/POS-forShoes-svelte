@@ -54,7 +54,7 @@
         <input
             type="button"
             class="fadeIn fourth kh"
-            value="Login with google"
+            value="Continue with Google"
             style="background:#4285F4 !important;"
             on:click={signInWithGoogle}
         />
@@ -119,9 +119,9 @@
     */
 
     .kh {
-        background-color: #56baed;
+        background: #161616;
         border: none;
-        color: white;
+
         padding: 15px 80px;
         text-align: center;
         text-decoration: none;
@@ -141,7 +141,7 @@
     }
 
     .kh:hover {
-        background-color: #39ace7;
+        background: #161616;
     }
 
     .kh:active {
@@ -154,9 +154,9 @@
 
     input[type="text"],
     input[type="password"] {
-        background-color: #f6f6f6;
+        background-color: #484848;
         border: none;
-        color: #0d0d0d;
+        color: #ffffff;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -164,7 +164,7 @@
         font-size: 16px;
         margin: 5px;
         width: 85%;
-        border: 2px solid #f6f6f6;
+        border: 2px solid #505050;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -ms-transition: all 0.5s ease-in-out;
@@ -174,8 +174,9 @@
         border-radius: 5px 5px 5px 5px;
     }
 
-    input[type="text"]:focus {
-        background-color: #fff;
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        background-color: #494949;
         border-bottom: 2px solid #5fbae9;
     }
 
@@ -314,8 +315,8 @@
     #icon {
         width: 60%;
     }
-    
-    #customBtn {
+    */
+    .customBtn {
         display: inline-block;
         background: white;
         color: #444;
@@ -325,11 +326,11 @@
         box-shadow: 1px 1px 1px grey;
         white-space: nowrap;
     }
-    #customBtn:hover {
+    .customBtn:hover {
         cursor: pointer;
     }
 
-    span.label {
+    /* span.label {
         font-family: serif;
         font-weight: normal;
     }
@@ -341,7 +342,7 @@
         width: 42px;
         height: 42px;
     }
-    
+
     span.buttonText {
         display: inline-block;
         vertical-align: middle;

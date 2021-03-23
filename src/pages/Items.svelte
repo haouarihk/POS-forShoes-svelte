@@ -16,8 +16,6 @@
   import SearchBar from "../components/searchBar.svelte";
   // import NewItem from "../components/creation/newItem.svelte";
 
-  import "../../d/globals";
-  //@ts-ignore
   import Modal from "sv-bootstrap-modal";
 
   import { instructId, toArray } from "../components/utils/utils";
@@ -63,9 +61,10 @@
     return db.ref(`items/`).push().set(data);
   }
 
-  async function setItem(id: string, data: ItemShop) {
-    return db.ref(`items/${id}`).set(data);
-  }
+  /** Function to set item with data
+   */
+  const setItem = (id: string, data: ItemShop) =>
+    db.ref(`items/${id}`).set(data);
 
   let newItemData: ItemShop = defaults.ItemShop;
   async function createNewItem() {

@@ -54,6 +54,7 @@ export default {
 		}),
 
 		replace({
+			preventAssignment: true,
 			fbConfig: JSON.stringify(require("./firebaseConfig.json")),
 			denv: dotenv.config()
 

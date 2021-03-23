@@ -1,14 +1,14 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
   "include": [
-    "src/**/*",
-    "lang/lang.ts"
+    "src/",
+    "lang/"
   ],
   "exclude": [
-    "node_modules/*",
-    "__sapper__/*",
-    "public/*",
-    "app/*"
+    "node_modules/",
+    "__sapper__/",
+    "public/",
+    "app/"
   ],
   "compilerOptions": {
     "target": "ES2020",

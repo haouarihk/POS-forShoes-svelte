@@ -40,7 +40,7 @@
 
     export var Class: string = "";
     export var removeItem: Function, addToBasket: Function;
-    export var item: ItemShop | null = defaults.ItemShop;
+    export var item: ItemShop | null = null;
 </script>
 
 <input class={Class} bind:value on:keypress={onchange} />

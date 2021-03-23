@@ -26,25 +26,28 @@
     }
 </script>
 
+<p class="my-auto mx-1">
+    {#await syco()}
+        awaiting
+    {:then _}
+        {userData.displayName}
+    {:catch}
+        you don't have perms
+    {/await}
+
+    <button
+        class="nav-item mx-1 my-auto my-sm-0 btn"
+        on:click={() => auth.signOut()}
+        >LogOut
+    </button>
+</p>
+
 <style>
-    .nav-item{
+    .nav-item {
         border: 0;
     }
+    .btn:hover {
+        color: burlywood !important;
+        outline-color: cadetblue;
+    }
 </style>
-
-
-<p class="my-auto mx-1">
-{#await syco()}
-
-    awaiting
-{:then _}
-    {userData.displayName}
-{:catch}
-    you don't have perms
-{/await}
-|
-</p>
-<button
-    class="nav-item mx-1 my-auto my-sm-0"
-    on:click={() => auth.signOut()}>LogOut
-</button>
