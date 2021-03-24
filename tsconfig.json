@@ -13,6 +13,15 @@
   "compilerOptions": {
     "target": "ES2020",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "lang/*": [
+        "lang/*"
+      ],
+      "d/*": [
+        "d/*"
+      ]
+    }
   }
 }

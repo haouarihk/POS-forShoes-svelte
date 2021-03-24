@@ -36,7 +36,7 @@
     return true;
   }
 
-  import type { BasketItemd, ItemShop } from "../d/types";
+  import type { BasketItemd, ItemShop } from "d/types";
   import NavBar from "./components/navBar.svelte";
 
   import Pre from "./components/utils/pre.svelte";

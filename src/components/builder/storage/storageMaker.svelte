@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Storage } from "../../../../d/types";
+    import type { Storage } from "d/types";
 
     import firebase from "firebase";
 

@@ -3,7 +3,7 @@
   import "firebase/auth";
   import "firebase/storage";
 
-  import { Lang } from "../../lang/lang";
+  import { Lang } from "lang/lang";
 
   export let lang: string = "English";
 
@@ -16,10 +16,12 @@
   import SearchBar from "../components/searchBar.svelte";
   // import NewItem from "../components/creation/newItem.svelte";
 
+  import "d/globals";
+
   import Modal from "sv-bootstrap-modal";
 
   import { instructId, toArray } from "../components/utils/utils";
-  import type { BasketItemd, ItemShop, LangTypes } from "../../d/types";
+  import type { BasketItemd, ItemShop, LangTypes } from "d/types";
 
   import fb from "firebase";
   import Item from "../components/builder/item.svelte";

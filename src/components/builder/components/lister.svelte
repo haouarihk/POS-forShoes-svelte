@@ -7,7 +7,7 @@
 
     import { filtererOBJ, getListOf, instructId } from "../../utils/utils";
 
-    import type { NewItem } from "../../../../d/types";
+    import type { NewItem } from "d/types";
     import Dropdown from "../../dropdown.svelte";
 
     export let Class: string | undefined = "";

@@ -1,7 +1,7 @@
 <script lang="ts">
     import { getContext } from "svelte";
 
-    import type { Interdata } from "../../../../../d/types";
+    //import type { Interdata } from "d/types";
 
     const { close } = getContext("storage-modal");
 

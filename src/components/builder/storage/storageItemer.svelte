@@ -1,9 +1,5 @@
 <script lang="ts">
-    import type {
-        BasketItemd,
-        Storage,
-        StorageItem,
-    } from "../../../../d/types";
+    import type { BasketItemd, Storage, StorageItem } from "d/types";
 
     import Dropdown from "../../dropdown.svelte";
     import {

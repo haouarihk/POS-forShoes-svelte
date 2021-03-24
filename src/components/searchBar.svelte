@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { ItemShop } from "../../d/types";
+  import type { ItemShop } from "d/types";
   import Category from "./builder/category.svelte";
   import Lister from "./builder/components/lister.svelte";
   import Seller from "./builder/seller.svelte";

@@ -4,21 +4,21 @@
   import "firebase/auth";
   import "firebase/storage";
 
-  import type { BasketItemd } from "../../d/types";
+  import type { BasketItemd } from "d/types";
 
   import BasketItem from "./basketItem.svelte";
 
   export let basketItems: BasketItemd[] = [];
   let prices: number[] = [];
   export let totalCost: number;
-  export let takeback: (b:BasketItemd)=>void = () => {};
+  export let takeback: (b: BasketItemd) => void = () => {};
 
-  export let height:number=100;
+  export let height: number = 100;
 
-  let bh:any;
-  $:{
-    console.log(bh)
-    height =  bh*.6;
+  let bh: any;
+  $: {
+    console.log(bh);
+    height = bh * 0.6;
   }
 
   function dlt(i: number) {
@@ -30,11 +30,23 @@
   $: {
     totalCost = prices.reduce((a, b) => a + b, 0);
   }
- 
-  function distneast(){
 
-  }
+  function distneast() {}
 </script>
+
+<div class="h-100 lefty sidebar ">
+  <h2>Basket:</h2>
+  <br />
+  <div class="lfy" style="height:{height}px !imporant">
+    <div class="row">
+      {#each basketItems as _, i}
+        <BasketItem ids={_} index={i} />
+      {/each}
+    </div>
+  </div>
+</div>
+
+<svelte:window bind:innerHeight={bh} />
 
 <style>
   .lfy {
@@ -62,16 +74,3 @@
     padding: 1em;
   }
 </style>
-
-<div class="h-100 lefty sidebar " >
-  <h2>Basket:</h2><br />
-  <div class="lfy" style="height:{height}px !imporant">
-    <div class="row">
-        {#each basketItems as _, i}
-          <BasketItem ids={_} index={i}/>
-        {/each}
-    </div>
-  </div>
-</div>
-
-<svelte:window bind:innerHeight={bh}/>

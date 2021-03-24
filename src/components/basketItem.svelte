@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { BasketItemd, ItemShop } from "../../d/types";
+  import type { BasketItemd, ItemShop } from "d/types";
 
   import Pre from "./utils/pre.svelte";
 
@@ -7,9 +7,9 @@
 
   const fsdb = firebase.firestore();
 
-  export let Class: string="";
+  export let Class: string = "";
 
-  export let index: number=0;
+  export let index: number = 0;
   export let price: number = 0;
 
   //@ts-ignore
@@ -28,7 +28,7 @@
 
   (async () => {
     let data = (await fsdb.doc(`items/${ids.id}`).get()).data();
-     console.log(data)
+    console.log(data);
   })();
 
   $: {
@@ -40,6 +40,27 @@
     }
   }
 </script>
+
+<div class="card tts {Class}" bind:offsetWidth={wid}>
+  {#if wid > 250}<button class="bg-warn fa" on:click={() => dlt(index)} />{/if}
+  <div class="card-body">
+    <h5 class="card-title">{item.name}</h5>
+    <h6 class="card-subtitle mb-2 ">
+      Price:
+      <Pre price={item.price} />
+    </h6>
+    <div class="card-text row">
+      <div class="row col-12">
+        <h5 class="col">Color:</h5>
+        <h5 class="col" style="color:{color} !important">{color}</h5>
+      </div>
+      <div class="row col-12">
+        <h5 class="col">Size:</h5>
+        <h5 class="col">{size}</h5>
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
   .adj {
@@ -62,24 +83,3 @@
     padding-bottom: 1em;
   }
 </style>
-
-<div class="card tts {Class}" bind:offsetWidth={wid}>
-  {#if wid > 250}<button class="bg-warn fa" on:click={() => dlt(index)} />{/if}
-  <div class="card-body">
-    <h5 class="card-title">{item.name}</h5>
-    <h6 class="card-subtitle mb-2 ">
-      Price:
-      <Pre price={item.price} />
-    </h6>
-    <div class="card-text row">
-      <div class="row col-12">
-        <h5 class="col">Color:</h5>
-        <h5 class="col" style="color:{color} !important">{color}</h5>
-      </div>
-      <div class="row col-12">
-        <h5 class="col">Size:</h5>
-        <h5 class="col">{size}</h5>
-      </div>
-    </div>
-  </div>
-</div>

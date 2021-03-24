@@ -2,8 +2,8 @@
     import BarCodeReader from "../components/barcoder/barCodeReader.svelte";
     import Client from "../components/builder/client.svelte";
     import Lister from "../components/builder/components/lister.svelte";
-    import { Lang } from "../../lang/lang";
-    import type { LangTypes } from "../../d/types";
+    import { Lang } from "lang/lang";
+    import type { LangTypes } from "d/types";
 
     export let lang: string = "English";
 

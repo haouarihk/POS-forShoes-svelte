@@ -4,7 +4,7 @@
   // import { getContext } from "svelte";
   import { scale } from "svelte/transition";
 
-  import type { BasketItemd, ItemShop } from "../../d/types";
+  import type { BasketItemd, ItemShop } from "d/types";
   import StorageHandler from "./builder/storage/storageHandler.svelte";
   import Pre from "./utils/pre.svelte";
 

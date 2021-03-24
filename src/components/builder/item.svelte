@@ -1,13 +1,13 @@
 <script lang="ts">
     import Template from "./temps/template.svelte";
     import BarCodeSetter from "../barcoder/barCodeSetter.svelte";
-    import type { ItemShop, LangTypes } from "../../../d/types";
+    import type { ItemShop, LangTypes } from "d/types";
     import { defaults } from "../utils/defaults";
     import Lister from "./components/lister.svelte";
     import Category from "./category.svelte";
     import Seller from "./seller.svelte";
     import StorageMaker from "./storage/storageMaker.svelte";
-    import { Lang } from "../../../lang/lang";
+    import { Lang } from "lang/lang";
     import ItemTemplate from "./temps/itemTemplate.svelte";
 
     export let lang: string;

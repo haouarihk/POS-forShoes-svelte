@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
 var app = (function () {
     'use strict';
 
@@ -58969,7 +58969,7 @@ var app = (function () {
     		c: function create() {
     			input = element("input");
     			attr_dev(input, "type", "text");
-    			add_location(input, file$f, 27, 8, 888);
+    			add_location(input, file$f, 27, 8, 879);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
@@ -59214,7 +59214,7 @@ var app = (function () {
     		c: function create() {
     			input = element("input");
     			attr_dev(input, "type", "number");
-    			add_location(input, file$f, 53, 8, 1644);
+    			add_location(input, file$f, 53, 8, 1635);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
@@ -59258,7 +59258,7 @@ var app = (function () {
     		c: function create() {
     			input = element("input");
     			attr_dev(input, "type", "number");
-    			add_location(input, file$f, 57, 8, 1772);
+    			add_location(input, file$f, 57, 8, 1763);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
@@ -62093,7 +62093,7 @@ var app = (function () {
     	return block;
     }
 
-    // (95:0) {:then _}
+    // (96:0) {:then _}
     function create_then_block$1(ctx) {
     	let searchbar;
     	let updating_viewItems;
@@ -62224,14 +62224,14 @@ var app = (function () {
     		block,
     		id: create_then_block$1.name,
     		type: "then",
-    		source: "(95:0) {:then _}",
+    		source: "(96:0) {:then _}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (105:2) {#if viewItems[0]}
+    // (106:2) {#if viewItems[0]}
     function create_if_block_2(ctx) {
     	let itemsviewer;
     	let current;
@@ -62281,14 +62281,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(105:2) {#if viewItems[0]}",
+    		source: "(106:2) {#if viewItems[0]}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (93:18)     {Lang.langs[lang].general.loading}
+    // (94:18)     {Lang.langs[lang].general.loading}
     function create_pending_block$1(ctx) {
     	let t_value = Lang.langs[/*lang*/ ctx[0]].general.loading + "";
     	let t;
@@ -62314,14 +62314,14 @@ var app = (function () {
     		block,
     		id: create_pending_block$1.name,
     		type: "pending",
-    		source: "(93:18)     {Lang.langs[lang].general.loading}",
+    		source: "(94:18)     {Lang.langs[lang].general.loading}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:2) {:else}
+    // (126:2) {:else}
     function create_else_block$1(ctx) {
     	let div3;
     	let div0;
@@ -62386,26 +62386,26 @@ var app = (function () {
     			button2 = element("button");
     			t9 = text(t9_value);
     			attr_dev(h5, "class", "modal-title");
-    			add_location(h5, file$a, 127, 8, 3176);
+    			add_location(h5, file$a, 128, 8, 3191);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$a, 133, 10, 3370);
+    			add_location(span, file$a, 134, 10, 3385);
     			attr_dev(button0, "type", "button");
     			attr_dev(button0, "class", "close bg-danger svelte-14vou8l");
-    			add_location(button0, file$a, 128, 8, 3235);
+    			add_location(button0, file$a, 129, 8, 3250);
     			attr_dev(div0, "class", "modal-header f1 svelte-14vou8l");
-    			add_location(div0, file$a, 126, 6, 3137);
+    			add_location(div0, file$a, 127, 6, 3152);
     			attr_dev(div1, "class", "modal-body f2 svelte-14vou8l");
-    			add_location(div1, file$a, 136, 6, 3450);
+    			add_location(div1, file$a, 137, 6, 3465);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-secondary");
-    			add_location(button1, file$a, 142, 8, 3609);
+    			add_location(button1, file$a, 143, 8, 3624);
     			attr_dev(button2, "type", "button");
     			attr_dev(button2, "class", "btn btn-primary");
-    			add_location(button2, file$a, 148, 8, 3797);
+    			add_location(button2, file$a, 149, 8, 3812);
     			attr_dev(div2, "class", "modal-footer f1 svelte-14vou8l");
-    			add_location(div2, file$a, 141, 6, 3570);
+    			add_location(div2, file$a, 142, 6, 3585);
     			attr_dev(div3, "class", "poper svelte-14vou8l");
-    			add_location(div3, file$a, 125, 4, 3110);
+    			add_location(div3, file$a, 126, 4, 3125);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div3, anchor);
@@ -62476,14 +62476,14 @@ var app = (function () {
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(125:2) {:else}",
+    		source: "(126:2) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (119:23) 
+    // (120:23) 
     function create_if_block_1(ctx) {
     	let t0_value = Lang.langs[/*lang*/ ctx[0]].editing.error + "";
     	let t0;
@@ -62504,7 +62504,7 @@ var app = (function () {
     			t3 = space();
     			button = element("button");
     			t4 = text(t4_value);
-    			add_location(button, file$a, 121, 4, 3000);
+    			add_location(button, file$a, 122, 4, 3015);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -62541,14 +62541,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(119:23) ",
+    		source: "(120:23) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (117:2) {#if state == 1}
+    // (118:2) {#if state == 1}
     function create_if_block$3(ctx) {
     	let t_value = Lang.langs[/*lang*/ ctx[0]].general.loading + "";
     	let t;
@@ -62574,14 +62574,14 @@ var app = (function () {
     		block,
     		id: create_if_block$3.name,
     		type: "if",
-    		source: "(117:2) {#if state == 1}",
+    		source: "(118:2) {#if state == 1}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:0) <Modal bind:open={isOpen}>
+    // (117:0) <Modal bind:open={isOpen}>
     function create_default_slot$2(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -62655,7 +62655,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$2.name,
     		type: "slot",
-    		source: "(116:0) <Modal bind:open={isOpen}>",
+    		source: "(117:0) <Modal bind:open={isOpen}>",
     		ctx
     	});
 
@@ -64054,16 +64054,16 @@ var app = (function () {
     			t7 = space();
     			create_component(lister.$$.fragment);
     			attr_dev(h30, "class", "col-6");
-    			add_location(h30, file$5, 19, 8, 601);
+    			add_location(h30, file$5, 19, 8, 595);
     			attr_dev(div0, "class", "row");
-    			add_location(div0, file$5, 18, 4, 574);
-    			add_location(br, file$5, 24, 4, 755);
+    			add_location(div0, file$5, 18, 4, 568);
+    			add_location(br, file$5, 24, 4, 749);
     			attr_dev(h31, "class", "col-6");
-    			add_location(h31, file$5, 26, 8, 794);
+    			add_location(h31, file$5, 26, 8, 788);
     			attr_dev(div1, "class", "row");
-    			add_location(div1, file$5, 25, 4, 767);
+    			add_location(div1, file$5, 25, 4, 761);
     			attr_dev(main, "class", "main svelte-zhw21p");
-    			add_location(main, file$5, 17, 0, 549);
+    			add_location(main, file$5, 17, 0, 543);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

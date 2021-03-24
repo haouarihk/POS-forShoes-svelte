@@ -1,4 +1,4 @@
-import type { ItemShop, Storage } from "../../../d/types";
+import type { ItemShop, Storage } from "d/types";
 
 export namespace defaults {
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { NewItem } from "../../../d/types";
+    import type { NewItem } from "d/types";
 
     import Template from "./temps/template.svelte";
 

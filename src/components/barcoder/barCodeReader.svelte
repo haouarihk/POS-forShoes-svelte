@@ -5,7 +5,7 @@
     let fStorage = fb.storage();
     let fsdb = fb.firestore();
 
-    import type { ItemShop } from "../../../d/types";
+    import type { ItemShop } from "d/types";
 
     import Item from "../item.svelte";
 

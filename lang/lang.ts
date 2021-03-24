@@ -1,5 +1,5 @@
 
-import type { LangTypes } from "../d/types"
+import type { LangTypes } from "d/types"
 import { English } from "./langs/english"
 
 
